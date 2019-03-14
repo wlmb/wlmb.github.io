@@ -3,10 +3,11 @@
 #
 
 # Name of your site (displayed in the header)
-name: Blog de W. Luis Mochán
+name:W. Luis Mochán. Blog. 
 
 # Short bio or description (displayed in the header)
-description: Físico, investigador del ICF-UNAM
+description:Físico, investigador del ICF-UNAM. Physicist, researcher
+at ICF-UNAM.  
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/12705053?s=400&u=5152c10936cbaff220ceb4dbd5c22d8fde0c3334&v=4
@@ -18,17 +19,17 @@ avatar: https://avatars3.githubusercontent.com/u/12705053?s=400&u=5152c10936cbaf
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: mochan@fis.unam.mx
+  email:mochan@fis.unam.mx
   facebook:
   flickr:
-  github: wlmb/
+  github:wlmb/
   instagram:
   linkedin: 
   pinterest:
-  rss: a # just type anything here for a working RSS icon
-  twitter: wlmb
+  rss:a # just type anything here for a working RSS icon
+  twitter:wlmb
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/wlmb@gmail.com # channel/<your_long_string> or user/<user-name>
+  youtube:user/wlmb@gmail.com # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
