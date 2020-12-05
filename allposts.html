@@ -11,7 +11,7 @@ permalink: /all/
       {% for tag in post.tags %}
          {% if first %}
            Tags:
-           {% first = false %}
+           {% assign first = false %}
          {% else %}
            ,
          {% endif %}
