@@ -1,11 +1,10 @@
 ---
 layout: page
-title: List of entries in Perl Weekly Challenge
+title: List of entries to the Perl Weekly Challenge
 permalink: /pwc/
 ---
 {% for tag in site.tags %}
   {% if tag[0] == "pwc" %}
-     <h3>{{ tag[0] }}</h3>
      <ul>
        {% for post in tag[1] %}
          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
