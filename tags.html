@@ -3,7 +3,8 @@ layout: page
 title: List of tags
 permalink: /tags/
 ---
-{% for tag in site.tags %}
+{% assign ordered_tags =  site.tags|sort %}
+{% for tag in ordered_tags %}
      <h3 id= {{ '"' | append: tag[0] | append: '"' }}>{{ tag[0] }}</h3>
      <ul>
        {% for post in tag[1] %}
