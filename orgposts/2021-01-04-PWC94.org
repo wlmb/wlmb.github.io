@@ -214,7 +214,7 @@ Results:
 The inputs as parenthesized lists don't look terribly nice and it is
 easy to make errors. I guess they would look better if the input tree
 is coded as a yaml file. To that end, I rewrite the program above using
-the YAML::Tiny library.
+the ~YAML::Tiny~ package to process the inputs.
 
 #+begin_src perl :tangle ch-2a.pl :shebang #!/usr/bin/env perl
   # Perl weekly challenge 094
@@ -255,7 +255,7 @@ processes all its trees, one to each /document/.
   }
 #+end_src
 The trees are built from yaml objects: scalars for leaves,
-value-array pairs to represent a node with an array of of two
+value:array pairs to represent a node with an array of of two
 subtrees, null is for for empty subtrees.
 #+begin_src perl :tangle ch-2a.pl
   sub build_tree { #Build tree recursively
