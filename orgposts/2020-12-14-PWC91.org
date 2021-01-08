@@ -1,0 +1,214 @@
+#+OPTIONS: toc:nil author:nil
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Perl Weekly Challenge 91.
+excerpt: Count number and the jump game
+tags:
+   - pwc
+   - perl
+---
+#+END_EXPORT
+
+My solutions ([[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-091/wlmb/perl/ch-1.pl][task 1]] and [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-091/wlmb/perl/ch-2.pl][task 2]]) to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-091][The Weekly Challenge - 091]].
+
+* Task 1: Count Number
+/Submitted by: Mohammad S Anwar/
+
+/You are given a positive number $N./
+
+/Write a script to count number and display as you read it./
+
+/Example 1:/
+#+begin_example
+Input: $N = 1122234
+Output: 21321314
+#+end_example
+/as we read "two 1 three 2 one 3 one 4"/
+
+/Example 2:/
+#+begin_example
+Input: $N = 2333445
+Output: 12332415
+#+end_example
+/as we read "one 2 three 3 two 4 one 5"/
+
+/Example 3:/
+#+begin_example
+Input: $N = 12345
+Output: 1112131415
+#+end_example
+/as we read "one 1 one 2 one 3 one 4 one 5"/
+
+This task is a straightforward run length encoding (RLE) of the digits
+of a number without the subleties of RLE. My solution is
+straightforward. First, some pragmas and packages.
+#+begin_src perl :tangle ch-1.pl :shebang #!/usr/bin/env perl
+# Perl weekly challenge 091
+# Task 1: Count Number
+# Simple RLE encoding of a sequence of digits.
+# See https:/wlmb.github.io/2020/12/14/PWC91/#task-1-count-number
+use warnings;
+use strict;
+use v5.10;
+use List::Util qw(all);
+use Scalar::Util::Numeric qw(isint);
+#+end_src
+Take the arguments from the command line.
+#+begin_src perl :tangle ch-1.pl
+die "Usage ./ch-1.pl n0 n1 ... to codify numbers n0 n1 ..." unless @ARGV;
+die "Only non-negative numbers allowed" unless all {isint $_ == 1} @ARGV;
+#+end_src
+For each digit, if repeated, increment its count, if not, print count
+of previous digit and initialize new count. Use a unique end marker to
+force printing of the last digit. The coding seems
+ambiguous for a large number of repetitions: 1213 means one 2 and one 3
+or a hundred and twenty one 3's? 101 means one 0 and a malformed string or ten 1's?
+In order to avoid problems, I don't encode more than 9 repetitions. Thus,
+11111111111 is coded as nine 1's and another two 1's. The use of
+empty printable strings instead of uninitialized values, and a last non-digit
+marker, require string instead of numerical
+comparisons. I don't know what should I do with leading zeroes, so I
+allow perl to remove them using int.
+#+begin_src perl :tangle ch-1.pl
+  for my $N(map {int $_} @ARGV){
+      print "Input:\t$N\nOutput:\t";
+      my $current_digit=""; # Initialize to something printable
+      my $current_count="";
+      foreach(split(//, $N), "I'm not a digit"){ # digits and a unique stop marker
+	  if($current_digit ne $_  || $current_count eq 9){ # string comparisons
+	      print "$current_count$current_digit";
+	      $current_count=0;
+	      $current_digit=$_;
+	  }
+	  ++$current_count;
+      }
+      say "\n";
+  }
+#+end_src
+Example:
+#+begin_src bash :results output verbatim
+./ch-1.pl 1122234 2333445 12345 1111111111111111111 000 0000123
+#+end_src
+
+Results:
+#+begin_example
+Input:	1122234
+Output:	21321314
+
+Input:	2333445
+Output:	12332415
+
+Input:	12345
+Output:	1112131415
+
+Input:	1111111111111111111
+Output:	919111
+
+Input:	0
+Output:	10
+
+Input:	123
+Output:	111213
+
+#+end_example
+[[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-091/wlmb/perl/ch-1.pl][Code]].
+
+* Task 2: Jump Game
+/Submitted by: Mohammad S Anwar/
+
+/You are given an array of positive numbers @N, where value at each/
+/index determines how far you are allowed to jump further./
+
+/Write a script to decide if you can jump to the last index. Print 1/
+/if you are able to reach the last index otherwise 0./
+
+/Example 1:/
+#+begin_example
+Input: @N = (1, 2, 1, 2)
+Output: 1
+#+end_example
+/as we jump one place from index 0 and then two places from index 1 to reach the last index./
+
+/Example 2:/
+#+begin_example
+Input: @N = (2,1,1,0,2)
+Output: 0
+#+end_example
+/it is impossible to reach the last index. as we jump two places from/
+/index 0 to reach index 2, followed by one place jump from index 2 to/
+/reach the index 3. once you reached the index 3, you can't go any/
+/further because you can only jump 0 position further./
+
+I solve this challenge by making a set of stepping stones working
+backwards from the last one. A stone is a stepping stone if from it we
+can reach another stepping stone[ [fn::After seeing other answers
+(2020-12-21) I guess several participants took ~@N~ as an array of
+actual jump lengths, not of maximum allowed jumps. This makes the
+problem easier, but less interesting. Unfortunately, the examples are
+consistent with both interpretations.] ].
+
+
+First, the usual stuff and a couple of packages.
+#+begin_src perl :tangle ch-2.pl :shebang #!/usr/bin/env perl
+# Perl weekly challenge 091
+# Task 2: Jump Game
+# Test if you can reach last element of an array by succesive jumps of bounded lengths.
+# See https:/wlmb.github.io/2020/12/14/PWC91/#task-2-jump-game
+
+use strict;
+use warnings;
+use v5.10;
+use List::Util qw(all);
+use Scalar::Util::Numeric qw(isint);
+#+end_src
+Check the arguments. Initialize the array taking the values from @ARGV.
+The goal is to reach position ~$#stones~ from position ~0~.
+#+begin_src perl :tangle ch-2.pl
+die "Usage: ./ch-2.pl s0 s1 s2...\n\t with sn maximum number of steps from stone n"
+    unless @ARGV;
+die "Only non-negative numbers allowed" unless all {isint $_ == 1} @ARGV;
+my @stones=@ARGV;
+#+end_src
+For all stones, check if you can
+reach from them any stepping stone and update resulting set accordingly. Print result.
+Since the problem is 1D, it is enough to
+reach the closest stepping stone.
+#+begin_src perl :tangle ch-2.pl
+  my @stepping_stones;
+  push @stepping_stones, $#stones;
+  foreach(reverse (0..$#stones-1)){ # add stepping stones from right to left
+      unshift @stepping_stones, $_ if $stepping_stones[0] <= $_+$stones[$_];
+  }
+  say $stepping_stones[0]==0
+      ?"1 Success\nPath: " . join "->", @stepping_stones
+      :"0 Failure";
+#+end_src
+
+Example 1:
+#+begin_src bash :results output
+./ch-2.pl 1 2 1 2
+#+end_src
+
+Results:
+: 1 Success
+: Path: 0->1->2->3
+
+Example 2:
+#+begin_src bash  :results output
+./ch-2.pl 2 1 1 0 2
+#+end_src
+
+Results:
+: 0 Failure
+
+Example 3:
+#+begin_src bash  :results output
+./ch-2.pl 2 0 3 0 2 0 1
+#+end_src
+
+Results:
+: 1 Success
+: Path: 0->2->4->6
+
+[[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-091/wlmb/perl/ch-2.pl][Code]].

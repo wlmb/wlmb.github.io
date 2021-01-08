@@ -1,0 +1,225 @@
+#+OPTIONS: toc:nil author:nil
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Perl Weekly Challenge 90.
+excerpt: Analyze DNA sequence and Ethiopian Multiplication
+tags:
+   - pwc
+   - perl
+---
+#+END_EXPORT
+
+My solutions to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-090/#TASK1][The Perl Weekly Challenge - 090]], [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-090/wlmb/perl/ch-1.pl][task 1]] and
+[[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-090/wlmb/perl/ch-2.pl][task 2]].
+* Task 1: DNA Sequence
+/DNA is a long, chainlike molecule which has two strands twisted into a/
+/double helix. The two strands are made up of simpler molecules called/
+/nucleotides. Each nucleotide is composed of one of the four/
+/nitrogen-containing nucleobases cytosine (C), guanine (G), adenine (A)/
+/and thymine (T)./
+
+/You are given DNA sequence, GTAAACCCCTTTTCATTTAGACAGATCGACTCCTTATCCATTCTCAGAGATGTGTTGCTGGTCGCCG./
+
+/Write a script to print nucleiobase count in the given DNA/
+/sequence. Also print the complementary sequence where Thymine (T) on/
+/one strand is always facing an adenine (A) and vice versa; guanine (G)/
+/is always facing a cytosine (C) and vice versa./
+
+/To get the complementary sequence use the following mapping:/
+
+/T => A/
+/A => T/
+/G => C/
+/C => G/
+
+To solve this /task/ I split the DNA sequence into its nucleotides and use
+a couple of hashes to keep a count of each base and to map them to
+their complement.
+
+The code starts with the usual headers and some useful packages.
+
+#+BEGIN_SRC perl :tangle ch-1.pl :shebang #!/usr/bin/env perl
+
+# For sequences of DNA get nucleotide counts and its complement
+# See https:/wlmb.github.io/2020/12/07/PWC90/#task-1-dna-sequence
+use strict;
+use warnings;
+use v5.10;
+
+use List::Util qw(sum0);
+#+END_SRC
+
+
+Receive sequences as strings in ~@ARGV~.
+#+BEGIN_SRC perl :tangle ch-1.pl
+say('Usage: ch-1.pl sequence1 sequence2 ...'), exit 1 unless @ARGV;
+#+END_SRC
+
+Initialize the map from nucleotides to their complement.
+#+begin_src perl :tangle ch-1.pl
+my %complement_of; # Map dna nucleotide to its complement
+@complement_of{my @nucleotides=qw(T A G C)}=qw(A T C G); #initialize
+#+end_src
+
+For each sequence, test that it only contains valid bases, complement
+it, count its nucleotides and report the results.
+#+begin_src perl :tangle ch-1.pl
+foreach my $sequence(map {uc} @ARGV){
+    say("Wrong sequence $sequence"), next unless $sequence=~/^[@nucleotides]*$/;
+    say "  Sequence: $sequence";
+    say "Complement: ", complement($sequence);
+    my %count_for=get_count_for($sequence);
+    say "Nucleotide counts:";
+    say "\t$_-$complement_of{$_} $count_for{$_}" for @nucleotides;
+    say "\tTotal\t", sum0 values %count_for;
+}
+#+end_src
+
+Complement a sequence by taking it apart, complementing each
+nucleatide using the ~$complement_of~ map and joining them back.
+
+#+begin_src perl :tangle ch-1.pl
+sub complement { # converts string with a DNA sequence to its complement
+    my $sequence=shift;
+    return join "", map {$complement_of{$_}} split //, $sequence;
+}
+#+end_src
+
+Accumulate counts for each nucleotide using a hash.
+#+begin_src perl :tangle ch-1.pl
+sub get_count_for { # count nucleotides of a dna sequence
+    my $sequence=shift;
+    my @nucleotides=split //,$sequence;
+    my %count_for; # counts of nucleotides
+    @count_for{qw(T A G C)}=((0) x 4); #initialize with 0's
+    map {$count_for{$_}++} split //, $sequence;
+    return %count_for;
+}
+#+end_src
+
+Run it providing both valid and invalid inputs.
+#+begin_src bash :results output verbatim
+./ch-1.pl hithere \
+   GTAAACCCCTTTTCATTTAGACAGATCGACTCCTTATCCATTCTCAGAGATGTGTTGCTGGTCGCCG \
+   TGCTGGTCGCCG
+#+end_src
+
+Results:
+#+begin_example
+Wrong sequence HITHERE
+  Sequence: GTAAACCCCTTTTCATTTAGACAGATCGACTCCTTATCCATTCTCAGAGATGTGTTGCTGGTCGCCG
+Complement: CATTTGGGGAAAAGTAAATCTGTCTAGCTGAGGAATAGGTAAGAGTCTCTACACAACGACCAGCGGC
+Nucleotide counts:
+	T-A 22
+	A-T 14
+	G-C 13
+	C-G 18
+	Total	67
+  Sequence: TGCTGGTCGCCG
+Complement: ACGACCAGCGGC
+Nucleotide counts:
+	T-A 3
+	A-T 0
+	G-C 5
+	C-G 4
+	Total	12
+#+end_example
+
+* Task 2: Ethiopian Multiplication
+/You are given two positive numbers $A and $B./
+
+/Write a script to demonstrate Ethiopian Multiplication using the given numbers./
+
+It turns out that ethiopian multiplication is just ordinary
+multiplication in the binary system, i.e., we multiply the
+multiplicand by each digit of the multiplier and shift the result
+left the number of places corresponding to that digit.
+Thus, to multiply 6x5 in binary we write
+#+begin_example
+             1  1  0
+    x        1  0  1
+    -----------------
+    =        1  1  0
+    +     0  0  0
+    +  1  1  0
+    -----------------
+    =  1  1  1  1  0
+    -----------------
+#+end_example
+which reads as 110x101=1x110+0x1100+1x11000=11110, or
+in base 10, 6x5=1x6+0x12+1x24=30. To get the
+succesive digits of the multiplier we can divide by two (shifth right)
+and test the least significant digit, i.e., test if the result is odd
+or even.
+
+As computers use binary internally, the simplest program to perform Ethiopian
+multiplication would be something as
+#+begin_src bash :results output verbatim
+perl -E 'say $ARGV[0]*$ARGV[1]' 5 6
+#+end_src
+
+Result:
+#+begin_example
+30
+#+end_example
+
+Nevertheless, to display the process, I did the following program.
+Start with the usual headers and packages. Use integer arithmetic to
+avoid fractional quotients.
+#+BEGIN_SRC perl :tangle ch-2.pl  :shebang #!/usr/bin/env perl
+# Multiply two numbers using the Ethiopian Multiplication
+# See https:/wlmb.github.io/2020/12/07/PWC90/#task-2-ethiopian-multiplication
+use strict;
+use warnings;
+use v5.10;
+use integer;
+use List::Util qw(all);
+#+END_SRC
+Receive the two numbers to be multiplied in ~@ARGV~. Verify they are
+positive integers.
+#+begin_src perl :tangle ch-2.pl
+# receive the two numbers in @ARGV
+die 'Usage: ./ch2.pl number1 number2' unless @ARGV==2;
+my ($x, $y)= @ARGV; #
+die 'Expected two non-negative integers'   # check they are postitive integers
+    unless all {int($_) eq $_ && $_>=0} ($x, $y); #Use eq to avoid implicit int conversion
+#+end_src
+Perform initializations.
+#+begin_src perl :tangle ch-2.pl
+my $expected_result=$x*$y;
+my $result=0;
+my $result_string="$x x $y = ";
+my $operator="";
+#+end_src
+Perform the actual multiplication. Divide ~$x~ by 2 (shift right) and
+multiply ~$y~ by two (shift left) succesively. Display
+the partial results, flagging the lines where ~$x~ is odd and ~$y~ should
+be added, and construct a string with the final result.
+#+begin_src perl :tangle ch-2.pl
+while($x){
+    if($x&1){  # $x is odd, add $y to result
+	print "->"; # flag line
+	$result += $y;
+	$result_string .= "$operator 1 x $y";
+    } else {   # $x is even, don't add y
+	$result_string.="$operator 0 x $y";
+    }
+    say "\tx=$x\ty=$y";
+    $operator=" + ";
+    $x>>=1;  # Divde $x by 2
+    $y<<=1;  # Multiply $y by 2
+}
+say " $result_string = $result (Expected: $expected_result)";
+#+end_src
+Sample run:
+#+begin_src bash :results output verbatim
+./ch-2.pl 11 23
+#+end_src
+
+Results:
+: ->	x=11	y=23
+: ->	x=5	y=46
+: 	x=2	y=92
+: ->	x=1	y=184
+:  11 x 23 =  1 x 23 +  1 x 46 +  0 x 92 +  1 x 184 = 253 (Expected: 253)
