@@ -3,6 +3,7 @@
 ---
 layout: post
 title: Perl Weekly Challenge 94.
+comments: true
 excerpt: Group anagrams and binary tree to linked list.
 tags:
    - pwc
