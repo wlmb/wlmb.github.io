@@ -9,7 +9,7 @@ tags:
    - perl
 ---
 #+END_EXPORT
-My solutions ([[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-094/wlmb/perl/ch-1.pl][task 1]] and [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-094/wlmb/perl/ch-2.pl][task 2]]) to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-094][The Weekly Challenge - 094]].
+My solutions ([[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-094/wlmb/perl/ch-1.pl][task 1,]] [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-094/wlmb/perl/ch-2.pl][task 2]] and an alternative solution to [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-094/wlmb/perl/ch-2a.pl][task 2]]) to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-094][The Weekly Challenge - 094]].
 * Task 1: Group Anagrams
 /Submitted by: Mohammad S Anwar/
 
