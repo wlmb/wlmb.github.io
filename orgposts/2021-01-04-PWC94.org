@@ -195,8 +195,8 @@ Anyway, I test the given example:
 Results:
 : 1->2->4->5->6->7->3
 
-Other examples (subtrees only on the right, only on the left,
-and a balanced binary tree):
+Other examples (subtrees only on the right, only on the left, a
+balanced binary tree, an empty tree):
 
 #+begin_src bash :results output verbatim
 ./ch-2.pl '(1,(2,(3,(4,(),()),()),()),())'\
@@ -279,6 +279,7 @@ all the examples above.
 #+begin_src bash :results output verbatim
 cat <<EOF >rem.yml
 ---
+# original example
 1:
  - 2:
    - 4
@@ -287,6 +288,7 @@ cat <<EOF >rem.yml
      - 7
  - 3
 ---
+# only left descendants
 1:
   - 2:
      - 3:
@@ -295,6 +297,7 @@ cat <<EOF >rem.yml
      - ~
   - ~
 ---
+# only right descendants
 1:
  - ~
  - 2:
@@ -303,6 +306,7 @@ cat <<EOF >rem.yml
        - ~
        - 4
 ---
+# balanced tree
 1:
  - 2:
     - 4
