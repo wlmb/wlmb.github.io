@@ -10,7 +10,7 @@ tags:
    - perl
 ---
 #+END_EXPORT
-My solutions ([[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-095/wlmb/perl/ch-1.pl][task 1,]] and [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-095/wlmb/perl/ch-2.pl][task 2]]) to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-095][The Weekly Challenge - 095]].
+My solutions ([[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-095/wlmb/perl/ch-1.pl][task 1]], [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-095/wlmb/perl/ch-1a.pl][task 1a]], and [[https://github.com/wlmb/perlweeklychallenge-club/blob/master/challenge-095/wlmb/perl/ch-2.pl][task 2]]) to the [[https://perlweeklychallenge.org/blog/perl-weekly-challenge-095][The Weekly Challenge - 095]].
 * Task 1: Palindrome Number
 /Submitted by: Mohammad S Anwar/
 
