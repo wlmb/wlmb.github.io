@@ -11,9 +11,9 @@ tags:
 
 # Introducción
 
- ( Si encuentra las ecuaciones ilegibles en esta versión, puede
+   ( Si encuentra las ecuaciones ilegibles en esta versión, puede
 consultar la versión pdf con las ecuaciones bien tipografiadas
-[aquí]({{ site.url }}/assets/pdf/20210529campolocal.pdf))
+[aquí]({{ site.url }}/assets/pdf/20210529campolocal.pdf) )
 
 La respuesta macroscópica de un sistema no es el simple promedio de su
 respuesta microscópica. Esto se debe a que el campo eléctrico
