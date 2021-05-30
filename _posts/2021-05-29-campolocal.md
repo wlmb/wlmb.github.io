@@ -13,7 +13,7 @@ tags:
 
  ( En esta versión las ecuaciones están ilegibles. La versión pdf con
 las ecuaciones bien tipografiadas está
-[aquí](http:../../../../assets/pdf/20210529campolocal.pdf))
+[aquí](http:/assets/pdf/20210529campolocal.pdf))
 
 La interacción entre planos cristalinos está definida por el tensor
 
