@@ -9,13 +9,227 @@ tags:
 ---
 
 
-# Teoría
+# Introducción
 
- ( En esta versión las ecuaciones están ilegibles. La versión pdf con
-las ecuaciones bien tipografiadas está
+ ( Si encuentra las ecuaciones ilegibles en esta versión, puede
+consultar la versión pdf con las ecuaciones bien tipografiadas
 [aquí]({{ site.url }}/assets/pdf/20210529campolocal.pdf))
 
-La interacción entre planos cristalinos está definida por el tensor
+La respuesta macroscópica de un sistema no es el simple promedio de su
+respuesta microscópica. Esto se debe a que el campo eléctrico
+microscópico tiene fluctuaciones espaciales que están correlacionadas
+con la textura espacial del sistema. Este efecto es conocido como el
+*efecto de campo local*. Un ejemplo muy conocido de este efecto es el
+de un sólido isotrópico modelado como una red cúbica de entidades
+polarizables puntuales caracterizadas por su polarizabilidad
+<img src="/assets/ltximg/2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" alt="2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" />. Sin efecto de campo local, la respuesta dieléctrica
+macroscópica sería
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_3e0ecd39deae07f68899706197251b8b4f08e2dc.png" alt="2021-05-29-campolocal_3e0ecd39deae07f68899706197251b8b4f08e2dc.png" />
+</span>
+<span class="equation-label">
+1
+</span>
+</div>
+
+con <img src="/assets/ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" /> la densidad de
+las entidades polarizables. Sin embargo, al tomar en cuenta que la
+polarizabilidad es la respuesta no sólo al campo externo, sino también
+al campo producido por todos los dipolos vecinos, la ecuación anterior
+se ve reemplazada por la relación de Claussius-Mossoti,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_73135f54abebe967ab72ab3e64a40f21e1a8d9ee.png" alt="2021-05-29-campolocal_73135f54abebe967ab72ab3e64a40f21e1a8d9ee.png" />
+</span>
+<span class="equation-label">
+2
+</span>
+</div>
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_6e86be3f200a33a9bc9e35a5f830baa58418c191.png" alt="2021-05-29-campolocal_6e86be3f200a33a9bc9e35a5f830baa58418c191.png" />
+</span>
+<span class="equation-label">
+3
+</span>
+</div>
+
+Como la corrección de campo local depende de la interacción con
+entidades polarizables vecinas, podríamos esperar que se vea
+modificada en la vecindad de una superficie. El propósito de estas
+notas es mostrar cómo podríamos calcular el efecto de campo local
+superficial y explorar sus consecuencias.
+
+
+# Teoría
+
+Consideremos una red de Bravais bidimensional <img src="/assets/ltximg/2021-05-29-campolocal_5bd063f08144ad99558f0a7157e8c6078d6b815a.png" alt="2021-05-29-campolocal_5bd063f08144ad99558f0a7157e8c6078d6b815a.png" /> en el plano
+<img src="/assets/ltximg/2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" alt="2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" /> ocupada por
+cargas puntuales unitarias <img src="/assets/ltximg/2021-05-29-campolocal_3f8c539dd8aa8f627909271d43e4e37d0094eef2.png" alt="2021-05-29-campolocal_3f8c539dd8aa8f627909271d43e4e37d0094eef2.png" />. El potencial electrostático
+<img src="/assets/ltximg/2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" alt="2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" /> que
+produciría en un punto <img src="/assets/ltximg/2021-05-29-campolocal_245db958c78a5f721d51f4241c0090bf048fdf4b.png" alt="2021-05-29-campolocal_245db958c78a5f721d51f4241c0090bf048fdf4b.png" /> es
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_6a1d30764eb16698009f0ad68c5f61a9bf01883d.png" alt="2021-05-29-campolocal_6a1d30764eb16698009f0ad68c5f61a9bf01883d.png" />
+</span>
+<span class="equation-label">
+4
+</span>
+</div>
+
+La ecuación previa no es muy útil por la lenta convergencia en el
+espacio real del potencial Coulombiano. Conviene entonces recurrir a la
+ecuación diferencial del potencial,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_35677304c526c65df6e95a2245c8ba2f7f04b026.png" alt="2021-05-29-campolocal_35677304c526c65df6e95a2245c8ba2f7f04b026.png" />
+</span>
+<span class="equation-label">
+5
+</span>
+</div>
+
+en el espacio recíproco <img src="/assets/ltximg/2021-05-29-campolocal_ca99b1d2c197d62429b20b2e07f1d43f9982386c.png" alt="2021-05-29-campolocal_ca99b1d2c197d62429b20b2e07f1d43f9982386c.png" /> definido por <img src="/assets/ltximg/2021-05-29-campolocal_5832a5dcfb21fcb6b7aea9822cda13ee31f0bbfb.png" alt="2021-05-29-campolocal_5832a5dcfb21fcb6b7aea9822cda13ee31f0bbfb.png" />,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_2a9132df74afbca1440bcd94b1e882bb86a637d7.png" alt="2021-05-29-campolocal_2a9132df74afbca1440bcd94b1e882bb86a637d7.png" />
+</span>
+<span class="equation-label">
+6
+</span>
+</div>
+
+con <img src="/assets/ltximg/2021-05-29-campolocal_06b0064c464f9c3ff4ebfd5c657323cf3a067d9a.png" alt="2021-05-29-campolocal_06b0064c464f9c3ff4ebfd5c657323cf3a067d9a.png" /> es el coeficiente de Fourier 2D del potencial
+<img src="/assets/ltximg/2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" alt="2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" /> evaluado a la altura <img src="/assets/ltximg/2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" alt="2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" />.
+La solución que decae al alejarnos del plano <img src="/assets/ltximg/2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" alt="2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" /> para <img src="/assets/ltximg/2021-05-29-campolocal_02e5d3c38c08a90159a6d4ee5037f30f7e5181cc.png" alt="2021-05-29-campolocal_02e5d3c38c08a90159a6d4ee5037f30f7e5181cc.png" /> es
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_10a3822d3c72d38b0f50d19bff483af87953eb59.png" alt="2021-05-29-campolocal_10a3822d3c72d38b0f50d19bff483af87953eb59.png" />
+</span>
+<span class="equation-label">
+7
+</span>
+</div>
+
+Regresando al espacio real, el potencial queda dado por
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_0078513d6cd5dfde1455f57b9c2c0815b3860607.png" alt="2021-05-29-campolocal_0078513d6cd5dfde1455f57b9c2c0815b3860607.png" />
+</span>
+<span class="equation-label">
+8
+</span>
+</div>
+
+donde añadimos al termino <img src="/assets/ltximg/2021-05-29-campolocal_8b524674698b2174331edbb50aa5755e605322b1.png" alt="2021-05-29-campolocal_8b524674698b2174331edbb50aa5755e605322b1.png" /> correspondiente al potencial producido
+por una película uniformemente cargada, y dónde introdujimos los
+vectores
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_ba255325731d2f9240a249cdaf65d236796bd2e6.png" alt="2021-05-29-campolocal_ba255325731d2f9240a249cdaf65d236796bd2e6.png" />
+</span>
+<span class="equation-label">
+9
+</span>
+</div>
+
+y empleamos el signo <img src="/assets/ltximg/2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" alt="2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" /> cuando <img src="/assets/ltximg/2021-05-29-campolocal_dd60e5a847ef19e198dfda430bad84b6395521a4.png" alt="2021-05-29-campolocal_dd60e5a847ef19e198dfda430bad84b6395521a4.png" /> y el signo <img src="/assets/ltximg/2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" alt="2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" /> cuando
+<img src="/assets/ltximg/2021-05-29-campolocal_1d735b9bca1aba8f58c8a18a98f3681713f8452a.png" alt="2021-05-29-campolocal_1d735b9bca1aba8f58c8a18a98f3681713f8452a.png" />. Esta es una serie rápidamente convergente siempre y cuando
+<img src="/assets/ltximg/2021-05-29-campolocal_0593ea6674b560b1eb4caca0153e4e89ba43a996.png" alt="2021-05-29-campolocal_0593ea6674b560b1eb4caca0153e4e89ba43a996.png" />.
+
+Consideremos ahora la misma red de Bravais, pero ocupada por
+dipolos idénticos <img src="/assets/ltximg/2021-05-29-campolocal_93058fc8e37a7a3782b358c6cdf9de825f57dfe1.png" alt="2021-05-29-campolocal_93058fc8e37a7a3782b358c6cdf9de825f57dfe1.png" />. La densidad de carga sería entonces
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_7dc5164201c4dd8c1e07f36d87d75a73d01c386e.png" alt="2021-05-29-campolocal_7dc5164201c4dd8c1e07f36d87d75a73d01c386e.png" />
+</span>
+<span class="equation-label">
+10
+</span>
+</div>
+
+i.e., operamos sobre la densidad monopolar con el operador <img src="/assets/ltximg/2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" alt="2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" />. Luego,
+el potencial dipolar <img src="/assets/ltximg/2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" alt="2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" /> se obtiene entonces aplicando el mismo
+operador sobre el potencial monopolar, <img src="/assets/ltximg/2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" alt="2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" />,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_edfd09360292afba65e9b2962900eb438e00a3a9.png" alt="2021-05-29-campolocal_edfd09360292afba65e9b2962900eb438e00a3a9.png" />
+</span>
+<span class="equation-label">
+11
+</span>
+</div>
+
+y el campo eléctrico <img src="/assets/ltximg/2021-05-29-campolocal_f6cc90dac529e4a22efc531d6239dab3c04b1ce0.png" alt="2021-05-29-campolocal_f6cc90dac529e4a22efc531d6239dab3c04b1ce0.png" />,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_956ed19ef0cd6b720caafa547f8cb7ab240ff297.png" alt="2021-05-29-campolocal_956ed19ef0cd6b720caafa547f8cb7ab240ff297.png" />
+</span>
+<span class="equation-label">
+12
+</span>
+</div>
+
+Construyamos ahora un cristal con caras planas orientadas de acuerdo a
+alguna dirección cristalográfica. Todos los sitios del plano son
+equivalentes y descritos por una red de Bravais 2D. Entonces podemos
+escribir la ecuación que obedece la -ésima entidad
+polarizable,
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_91479f064a44d251206ab7a0aa18da0ff257dfdb.png" alt="2021-05-29-campolocal_91479f064a44d251206ab7a0aa18da0ff257dfdb.png" />
+</span>
+<span class="equation-label">
+13
+</span>
+</div>
+
+donde <img src="/assets/ltximg/2021-05-29-campolocal_8ba83390c2f67c25e1aecef0033f9ecfb3fc7b31.png" alt="2021-05-29-campolocal_8ba83390c2f67c25e1aecef0033f9ecfb3fc7b31.png" /> representa el campo eléctrico en el
+sitio <img src="/assets/ltximg/2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" alt="2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" /> producido por un dipolo que <img src="/assets/ltximg/2021-05-29-campolocal_eb8c59938c801ac6c33df268718d10c7f3bf498f.png" alt="2021-05-29-campolocal_eb8c59938c801ac6c33df268718d10c7f3bf498f.png" /> en el sitio
+<img src="/assets/ltximg/2021-05-29-campolocal_cae2d4d31c691e645c5b4eb88ae07cc3b4c5825f.png" alt="2021-05-29-campolocal_cae2d4d31c691e645c5b4eb88ae07cc3b4c5825f.png" />. Suponiendo que todos los dipolos de un plano son equivalentes,
+podemos  podemos sumar las interacciones por planos
+cristalinos. Definimos entonces
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="/assets/ltximg/2021-05-29-campolocal_6857f5517101af444c2be2d8adf1505a229c7f92.png" alt="2021-05-29-campolocal_6857f5517101af444c2be2d8adf1505a229c7f92.png" />
+</span>
+<span class="equation-label">
+14
+</span>
+</div>
+
+donde <img src="/assets/ltximg/2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" alt="2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" /> es un sitio cualquiera del plano <img src="/assets/ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" />. Usando el campo
+dipolar previo,
+la interacción entre planos cristalinos está dada por el tensor
 
 
 <div class="equation-container">
@@ -23,23 +237,12 @@ La interacción entre planos cristalinos está definida por el tensor
 <img src="/assets/ltximg/2021-05-29-campolocal_66dd8b87e9a2253b8bdb8e24fef6ed7f5f0af22e.png" alt="2021-05-29-campolocal_66dd8b87e9a2253b8bdb8e24fef6ed7f5f0af22e.png" />
 </span>
 <span class="equation-label">
-1
+15
 </span>
 </div>
 
 donde <img src="/assets/ltximg/2021-05-29-campolocal_7e6baf5ed4d02877a23853fc7409ffba0c4bd99d.png" alt="2021-05-29-campolocal_7e6baf5ed4d02877a23853fc7409ffba0c4bd99d.png" /> son vectores recíprocos bidimensionales, <img src="/assets/ltximg/2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" alt="2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" /> es
 un vector que va de un sitio del plano <img src="/assets/ltximg/2021-05-29-campolocal_b2c1faafe389054fb76ed2f22fee4e477bf9270f.png" alt="2021-05-29-campolocal_b2c1faafe389054fb76ed2f22fee4e477bf9270f.png" /> a uno del plano <img src="/assets/ltximg/2021-05-29-campolocal_5f4e7b21a3ea44a39e70d22eda9e647299e9fdd7.png" alt="2021-05-29-campolocal_5f4e7b21a3ea44a39e70d22eda9e647299e9fdd7.png" />, y
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="/assets/ltximg/2021-05-29-campolocal_eec7ab1dec6ba085f912641e5f291cd19a4568b7.png" alt="2021-05-29-campolocal_eec7ab1dec6ba085f912641e5f291cd19a4568b7.png" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
-
 donde usamos el signo <img src="/assets/ltximg/2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" alt="2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" /> cuando <img src="/assets/ltximg/2021-05-29-campolocal_e83c1e3c5a1329ebf295197f46574b8d54e3e56b.png" alt="2021-05-29-campolocal_e83c1e3c5a1329ebf295197f46574b8d54e3e56b.png" /> y el signo <img src="/assets/ltximg/2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" alt="2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" /> cuando <img src="/assets/ltximg/2021-05-29-campolocal_bba2d0c3bdc650d1475f9056469f1c20200759fa.png" alt="2021-05-29-campolocal_bba2d0c3bdc650d1475f9056469f1c20200759fa.png" />.
 Para el caso <img src="/assets/ltximg/2021-05-29-campolocal_262ff47c938b92dc26114f00b931aa4e081b2a88.png" alt="2021-05-29-campolocal_262ff47c938b92dc26114f00b931aa4e081b2a88.png" /> podemos usar la regla de suma
 
@@ -49,7 +252,7 @@ Para el caso <img src="/assets/ltximg/2021-05-29-campolocal_262ff47c938b92dc2611
 <img src="/assets/ltximg/2021-05-29-campolocal_fbf711bdd9852efa832e6ee4053d189fc9a51ddb.png" alt="2021-05-29-campolocal_fbf711bdd9852efa832e6ee4053d189fc9a51ddb.png" />
 </span>
 <span class="equation-label">
-3
+16
 </span>
 </div>
 
@@ -423,7 +626,7 @@ La ecuación a resolver es
 <img src="/assets/ltximg/2021-05-29-campolocal_700610c1cd5c0789450f666d55eaeaa908deb63c.png" alt="2021-05-29-campolocal_700610c1cd5c0789450f666d55eaeaa908deb63c.png" />
 </span>
 <span class="equation-label">
-4
+17
 </span>
 </div>
 
@@ -435,7 +638,7 @@ La ecuación en el bulto es
 <img src="/assets/ltximg/2021-05-29-campolocal_fe1b7c231673297cccce9206154197c15baba6b5.png" alt="2021-05-29-campolocal_fe1b7c231673297cccce9206154197c15baba6b5.png" />
 </span>
 <span class="equation-label">
-5
+18
 </span>
 </div>
 
@@ -447,7 +650,7 @@ Restando,
 <img src="/assets/ltximg/2021-05-29-campolocal_b1d42c81ee7003c3689744a8bea62719297f57cb.png" alt="2021-05-29-campolocal_b1d42c81ee7003c3689744a8bea62719297f57cb.png" />
 </span>
 <span class="equation-label">
-6
+19
 </span>
 </div>
 
@@ -459,7 +662,7 @@ que reescribimos como
 <img src="/assets/ltximg/2021-05-29-campolocal_0fadeaed90d83a71672de42eeaf174427b046ce5.png" alt="2021-05-29-campolocal_0fadeaed90d83a71672de42eeaf174427b046ce5.png" />
 </span>
 <span class="equation-label">
-7
+20
 </span>
 </div>
 
@@ -520,7 +723,7 @@ Probémoslo con un dieléctrico no disipativo.
     ./Delta_p.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 2 -dmax 2 -N 5 -dir x \
                  -epsilon 2,0  -digits 4
 
-Resultados: <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+Resultados:
 
     [0.0010  -1.2466e-05  1.4262e-07  -1.6256e-09  1.8520e-11  -4.2182e-13
       1.8520e-11  -1.6256e-09  1.4262e-07  -1.2466e-05  0.0010]
@@ -609,7 +812,7 @@ integrarla sobre la coordenada normal para obtener la corriente superficial
 <img src="/assets/ltximg/2021-05-29-campolocal_3335b75cdc8504ce4a02a8ea1b75099e00d5de8f.png" alt="2021-05-29-campolocal_3335b75cdc8504ce4a02a8ea1b75099e00d5de8f.png" />
 </span>
 <span class="equation-label">
-8
+21
 </span>
 </div>
 
@@ -621,7 +824,7 @@ De aquí podemos identificar las conductividades superficiales,
 <img src="/assets/ltximg/2021-05-29-campolocal_322c5a77ff60691a769d70888ab3b52712b25941.png" alt="2021-05-29-campolocal_322c5a77ff60691a769d70888ab3b52712b25941.png" />
 </span>
 <span class="equation-label">
-9
+22
 </span>
 </div>
 
@@ -638,7 +841,7 @@ Con estas funciones respuesta puedo calcular la impedancia superficial
 <img src="/assets/ltximg/2021-05-29-campolocal_f64aece58acbb4b244f4839e6a0d039540da472e.png" alt="2021-05-29-campolocal_f64aece58acbb4b244f4839e6a0d039540da472e.png" />
 </span>
 <span class="equation-label">
-10
+23
 </span>
 </div>
 
@@ -974,8 +1177,3 @@ fragmentos de código computacional que pueden ensamblarse
 automáticamente, correrse y desplegar sus resultados en el mismo
 archivo. Los programas fueron escritos en el lenguaje `Perl` y su
 extensión numérica `Perl Data Language`.
-
-
-# Footnotes
-
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> En versiones previas de este documento había un error.
