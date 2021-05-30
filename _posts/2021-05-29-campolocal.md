@@ -170,7 +170,7 @@ dipolos idénticos <img src="/assets/ltximg/2021-05-29-campolocal_93058fc8e37a7a
 </div>
 
 i.e., operamos sobre la densidad monopolar con el operador <img src="/assets/ltximg/2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" alt="2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" />. Luego,
-el potencial dipolar <img src="/assets/ltximg/2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" alt="2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" /> se obtiene entonces aplicando el mismo
+el potencial dipolar <img src="/assets/ltximg/2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" alt="2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" /> se obtiene aplicando el mismo
 operador sobre el potencial monopolar, <img src="/assets/ltximg/2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" alt="2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" />,
 
 
@@ -196,10 +196,9 @@ y el campo eléctrico <img src="/assets/ltximg/2021-05-29-campolocal_f6cc90dac52
 </div>
 
 Construyamos ahora un cristal con caras planas orientadas de acuerdo a
-alguna dirección cristalográfica. Todos los sitios del plano son
-equivalentes y descritos por una red de Bravais 2D. Entonces podemos
-escribir la ecuación que obedece la -ésima entidad
-polarizable,
+alguna dirección cristalográfica.
+La ecuación que obedece la -ésima entidad
+polarizable es
 
 
 <div class="equation-container">
@@ -340,7 +339,8 @@ Define, lee y valida parámetros de la línea de comandos.
     usage $options, "Basis vectors should be 2D"
           unless lu_all {$_->dims==1 and $_->dim(0)==2} ($a, $b);
     usage $options, "c should be 3D" unless $c->dims==1 and $c->dim(0)==3;
-    usage $options, "Third component of c should be positive" unless $c->((2)) > 0;
+    usage $options, "Third component of c should be positive"
+          unless $c->((2)) > 0;
     usage $options, "pqmax should be positive" unless $pqmax > 0;
     usage $options, "dmax should be positive" unless $dmax > 0;
     usage $options, "N should be positive" unless $N > 0;
@@ -461,93 +461,93 @@ una red cúbica <img src="/assets/ltximg/2021-05-29-campolocal_6d2f2452b6b0c9fbf
 la red recíproca en <img src="/assets/ltximg/2021-05-29-campolocal_c3c17d7640627bd2d39a2b8d4a75777d856bb963.png" alt="2021-05-29-campolocal_c3c17d7640627bd2d39a2b8d4a75777d856bb963.png" />, permitiendo interacciones con
 segundos vecinos y en una película de semiancho 3 (ancho 7):
 
-    ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 2 -dmax 2 -N 3
+    ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 2 -dmax 2 -N 3 -digits 4
 
 Resultados:
 
     Diagonal components of the interaction
     xx:
     [
-      [  4.5168041  -0.1637295  -0.0002774  0  0  0  0]
-      [  -0.1637295  4.5168041  -0.1637295  -0.0002774  0  0  0]
-      [-0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774  0  0]
-      [  0  -0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774  0]
-      [  0  0  -0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774]
-      [  0  0  0  -0.0002774  -0.1637295  4.5168041  -0.1637295]
-      [  0  0  0  0  -0.0002774  -0.1637295  4.5168041]
+      [  4.5168  -0.1637  -0.0002  0  0  0  0]
+      [  -0.1637  4.5168  -0.1637  -0.0002  0  0  0]
+      [-0.0002  -0.1637  4.5168  -0.1637  -0.0002  0  0]
+      [  0  -0.0002  -0.1637  4.5168  -0.1637  -0.0002  0]
+      [  0  0  -0.0002  -0.1637  4.5168  -0.1637  -0.0002]
+      [  0  0  0  -0.0002  -0.1637  4.5168  -0.1637]
+      [  0  0  0  0  -0.0002  -0.1637  4.5168]
     ]
 
     yy:
     [
-      [  4.5168041  -0.1637295  -0.0002774  0  0  0  0]
-      [  -0.1637295  4.5168041  -0.1637295  -0.0002774  0  0  0]
-      [-0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774  0  0]
-      [  0  -0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774  0]
-      [  0  0  -0.0002774  -0.1637295  4.5168041  -0.1637295  -0.0002774]
-      [  0  0  0  -0.0002774  -0.1637295  4.5168041  -0.1637295]
-      [  0  0  0  0  -0.0002774  -0.1637295  4.5168041]
+      [  4.5168  -0.1637  -0.0002  0  0  0  0]
+      [  -0.1637  4.5168  -0.1637  -0.0002  0  0  0]
+      [-0.0002  -0.1637  4.5168  -0.1637  -0.0002  0  0]
+      [  0  -0.0002  -0.1637  4.5168  -0.1637  -0.0002  0]
+      [  0  0  -0.0002  -0.1637  4.5168  -0.1637  -0.0002]
+      [  0  0  0  -0.0002  -0.1637  4.5168  -0.1637]
+      [  0  0  0  0  -0.0002  -0.1637  4.5168]
     ]
 
     zz:
     [
-      [  -9.0336083  0.3274590  0.0005549  0  0  0  0]
-      [  0.3274590  -9.0336083  0.3274590  0.0005549  0  0  0]
-      [0.0005549  0.3274590  -9.0336083  0.3274590  0.0005549  0  0]
-      [  0  0.0005549  0.3274590  -9.0336083  0.3274590  0.0005549  0]
-      [  0  0  0.0005549  0.3274590  -9.0336083  0.3274590  0.0005549]
-      [  0  0  0  0.0005549  0.3274590  -9.0336083  0.3274590]
-      [  0  0  0  0  0.0005549  0.3274590  -9.0336083]
+      [  -9.0336  0.3274  0.0005  0  0  0  0]
+      [  0.3274  -9.0336  0.3274  0.0005  0  0  0]
+      [0.0005  0.3274  -9.0336  0.3274  0.0005  0  0]
+      [  0  0.0005  0.3274  -9.0336  0.3274  0.0005  0]
+      [  0  0  0.0005  0.3274  -9.0336  0.3274  0.0005]
+      [  0  0  0  0.0005  0.3274  -9.0336  0.3274]
+      [  0  0  0  0  0.0005  0.3274  -9.0336]
     ]
 
     Missing terms due to surface
-    xx: [-0.1640069  -0.0002774  0  0  0  -0.0002774  -0.1640069]
-    yy: [-0.1640069  -0.0002774  0  0  0  -0.0002774  -0.1640069]
-    zz: [0.3280139  0.0005549  0  0  0  0.0005549  0.3280139]
+    xx: [-0.1640  -0.0002  0  0  0  -0.0002  -0.1640]
+    yy: [-0.1640  -0.0002  0  0  0  -0.0002  -0.1640]
+    zz: [0.3280  0.0005  0  0  0  0.0005  0.3280]
 
 Ahora repito el cálculo pero truncando la red recíproca en <img src="/assets/ltximg/2021-05-29-campolocal_776e47fbfbb0a788652f2729d9cb4b703fd52ceb.png" alt="2021-05-29-campolocal_776e47fbfbb0a788652f2729d9cb4b703fd52ceb.png" />,
 
-    ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 3 -dmax 3 -N 3
+    ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 3 -dmax 3 -N 3 -digits 4
 
 Resultados:
 
     Diagonal components of the interaction
     xx:
     [
-      [  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0  0  0]
-      [  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0  0]
-      [-0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0]
-      [-5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07]
-      [  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774]
-      [  0  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323]
-      [  0  0  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108]
+      [  4.5168  -0.1637  -0.0002  -5.1449e-07  0  0  0]
+      [  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07  0  0]
+      [-0.0002  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07  0]
+      [-5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07]
+      [  0  -5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637  -0.0002]
+      [  0  0  -5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637]
+      [  0  0  0  -5.1449e-07  -0.0002  -0.1637  4.5168]
     ]
 
     yy:
     [
-      [  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0  0  0]
-      [  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0  0]
-      [-0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07  0]
-      [-5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774  -5.1449511e-07]
-      [  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323  -0.0002774]
-      [  0  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108  -0.1637323]
-      [  0  0  0  -5.1449511e-07  -0.0002774  -0.1637323  4.5168108]
+      [  4.5168  -0.1637  -0.0002  -5.1449e-07  0  0  0]
+      [  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07  0  0]
+      [-0.0002  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07  0]
+      [-5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637  -0.0002  -5.1449e-07]
+      [  0  -5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637  -0.0002]
+      [  0  0  -5.1449e-07  -0.0002  -0.1637  4.5168  -0.1637]
+      [  0  0  0  -5.1449e-07  -0.0002  -0.1637  4.5168]
     ]
 
     zz:
     [
-      [  -9.0336216  0.3274646  0.0005549  1.0289902e-06  0  0  0]
-      [  0.3274646  -9.0336216  0.3274646  0.0005549  1.0289902e-06  0  0]
-      [0.0005549  0.3274646  -9.0336216  0.3274646  0.0005549  1.0289902e-06  0]
-      [1.0289902e-06  0.0005549  0.3274646  -9.0336216  0.3274646  0.0005549  1.0289902e-06]
-      [  0  1.0289902e-06  0.0005549  0.3274646  -9.0336216  0.3274646  0.0005549]
-      [  0  0  1.0289902e-06  0.0005549  0.3274646  -9.0336216  0.3274646]
-      [  0  0  0  1.0289902e-06  0.0005549  0.3274646  -9.0336216]
+      [  -9.0336  0.3274  0.0005  1.0289e-06  0  0  0]
+      [  0.3274  -9.0336  0.3274  0.0005  1.0289e-06  0  0]
+      [0.0005  0.3274  -9.0336  0.3274  0.0005  1.0289e-06  0]
+      [1.0289e-06  0.0005  0.3274  -9.0336  0.3274  0.0005  1.0289e-06]
+      [  0  1.0289e-06  0.0005  0.3274  -9.0336  0.3274  0.0005]
+      [  0  0  1.0289e-06  0.0005  0.3274  -9.0336  0.3274]
+      [  0  0  0  1.0289e-06  0.0005  0.3274  -9.0336]
     ]
 
     Missing terms due to surface
-    xx: [-0.1640103  -0.0002780  -5.1449511e-07  0  -5.1449511e-07  -0.0002780  -0.1640103]
-    yy: [-0.1640103  -0.0002780  -5.1449511e-07  0  -5.1449511e-07  -0.0002780  -0.1640103]
-    zz: [0.3280206  0.0005560  1.0289902e-06  0  1.0289902e-06  0.0005560  0.3280206]
+    xx: [-0.1640  -0.0002  -5.1449e-07  0  -5.1449e-07  -0.0002  -0.1640]
+    yy: [-0.1640  -0.0002  -5.1449e-07  0  -5.1449e-07  -0.0002  -0.1640]
+    zz: [0.3280  0.0005  1.0289e-06  0  1.0289e-06  0.0005  0.3280]
 
 Comparando con los resultados previos, vemos que hay convergencia en
 la quinta cifra. Para otras orientaciones y otras redes podría
@@ -589,14 +589,17 @@ poder dar una respuesta dieléctrica y elegir una orientación.
                         ($a, $b, $c, $pqmax, $dmax, $N, $direction, $epsilon);
     usage $options, "Vectors should be comma separated list of numbers"
           unless lu_all {looks_like_number $_} map {split ','} ($a, $b, $c);
-    ($a,$b,$c) = map {pdl(split ',', $_)} ($a, $b, $c); #convert from strings to vectors
+    #convert from strings to vectors
+    ($a,$b,$c) = map {pdl(split ',', $_)} ($a, $b, $c);
     usage $options, "Basis vectors should be 2D"
           unless lu_all {$_->dims==1 and $_->dim(0)==2} ($a, $b);
     usage $options, "c should be 3D" unless $c->dims==1 and $c->dim(0)==3;
-    usage $options, "Third component of c should be positive" unless $c->((2)) > 0;
+    usage $options, "Third component of c should be positive"
+          unless $c->((2)) > 0;
     usage $options, "pqmax should be positive" unless $pqmax > 0;
     usage $options, "dmax should be positive" unless $dmax > 0;
-    usage $options, "dir should be x, y or z" unless $direction=~m{^[xyzXYZ]$};
+    usage $options, "dir should be x, y or z"
+          unless $direction=~m{^[xyzXYZ]$};
     my %index_from_direction=(x=>0, y=>1, z=>2);
     my $dir_i=$index_from_direction{lc $direction};
     usage $options, "N should be positive" unless $N > 0;
