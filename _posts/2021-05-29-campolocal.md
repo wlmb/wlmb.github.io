@@ -13,7 +13,7 @@ tags:
 
    ( Si encuentra las ecuaciones ilegibles en esta versión, puede
 consultar la versión pdf con las ecuaciones bien tipografiadas
-[aquí]({{ site.url }}/assets/pdf/20210529campolocal.pdf) )
+[aquí](/assets/pdf/20210529campolocal.pdf) )
 
 Qué fregados es el site.url={{ site.url }}
 
