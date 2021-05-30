@@ -15,6 +15,8 @@ tags:
 consultar la versión pdf con las ecuaciones bien tipografiadas
 [aquí]({{ site.url }}/assets/pdf/20210529campolocal.pdf) )
 
+Qué fregados es el site.url={{ site.url }}
+
 La respuesta macroscópica de un sistema no es el simple promedio de su
 respuesta microscópica. Esto se debe a que el campo eléctrico
 microscópico tiene fluctuaciones espaciales que están correlacionadas
