@@ -11,7 +11,7 @@ tags:
 
 # Introducción
 
-   ( Si encuentra las ecuaciones ilegibles en esta versión, puede
+ ( Si encuentra las ecuaciones ilegibles en esta versión, puede
 consultar la versión pdf con las ecuaciones bien tipografiadas
 [aquí](/assets/pdf/20210529campolocal.pdf) )
 
