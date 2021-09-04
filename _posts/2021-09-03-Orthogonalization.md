@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gram Schmidt in PDL 128.
+title: Orthogonalization of vector sets in PDL.
 comments: true
 excerpt: Implementation of orthogonalizations in the Perl Data Language.
 
@@ -42,7 +42,7 @@ The original version goes like this:
         $V(:,($m))/=($V(:,($m))**2)->sumover->sqrt; #normalize
     }
     my $t1=time();
-    say "Time for $N=", $t1-$t0;
+    say "Time for $N,$M=", $t1-$t0;
     # Check orthonormality
     my $O=(($V->dummy(2)*$V->dummy(1))->sumover-identity($M))->abs->sum;
     say "Orthogonality=$O";
@@ -89,7 +89,7 @@ The modified Gram Schmidt
         $V(:,($m))/=($V(:,($m))**2)->sumover->sqrt; #normalize
     }
     my $t1=time();
-    say "Time for $N=", $t1-$t0;
+    say "Time for $N,$M=", $t1-$t0;
     # Check orthonormality
     my $O=(($V->dummy(2)*$V->dummy(1))->sumover-identity($M))->abs->sum;
     say "Orthogonality=$O";
@@ -129,7 +129,7 @@ my luck with mqr from PDL::LinearAlgebra.
     my $t0=time();
     my $V=mqr($V->transpose)->transpose; # from PDL::LinearAlgebra
     my $t1=time();
-    say "Time for $N=", $t1-$t0;
+    say "Time for $N,$M=", $t1-$t0;
     # Check orthonormality
     my $O=(($V->dummy(2)*$V->dummy(1))->sumover-identity($M))->abs->sum;
     say "Orthogonality=$O";
