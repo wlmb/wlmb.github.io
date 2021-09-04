@@ -57,9 +57,9 @@ as a collection of row vectors. I test it on a 1000x1000 matrix
 
 Results:
 
-    Time for 1000=4.64041900634766
+    Time for 1000,1000=4.79456901550293
     Orthogonality=3.69626767899845e-08
-    Total time: 11.2374999523163
+    Total time: 8.97607803344727
 
 Checking the orthogonality seems to take longer than the actual
 orthogonalization, but in this example it requires building a large
@@ -101,9 +101,9 @@ The modified Gram Schmidt
 
 Results:
 
-    Time for 1000=13.4842178821564
+    Time for 1000,1000=12.9453370571136
     Orthogonality=3.30134552816193e-10
-    Total time: 17.9341950416565
+    Total time: 17.1491670608521
 
 The procedure is much slower, due to the nested PERL iteration, but
 the precision is two orders of magnitude better.
@@ -141,9 +141,9 @@ my luck with mqr from PDL::LinearAlgebra.
 
 Results:
 
-    Time for 1000=0.359604120254517
+    Time for 1000,1000=0.348345994949341
     Orthogonality=2.99989157025321e-11
-    Total time: 6.42734503746033
+    Total time: 6.43920516967773
 
 The orthogonality became another order of magnitude better, and the
 time gained one order of magnitude with respect to the first algorithm
@@ -151,7 +151,8 @@ and two with respect to the second one. So it seems this is the best
 procedure for orthogonalization within PDL.
 
 Now I do a case with a small number of entries to check that I get the
-same result.
+same result set of orthogonalized vectors. I also test sets with fewer
+vectors than the dimension.
 
     ./gramschmidt.pl 5 4
     ./modifiedgramschmidt.pl 5 4
@@ -159,9 +160,9 @@ same result.
 
 Results:
 
-    Time for 5=0.000301837921142578
+    Time for 5,4=0.000288963317871094
     Orthogonality=3.12944115066216e-15
-    Total time: 0.000452995300292969
+    Total time: 0.000442981719970703
 
     [
      [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
@@ -170,9 +171,9 @@ Results:
      [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
     ]
 
-    Time for 5=0.000345230102539062
+    Time for 5,4=0.000342130661010742
     Orthogonality=1.6531914726059e-15
-    Total time: 0.000492095947265625
+    Total time: 0.000490188598632812
 
     [
      [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
@@ -181,9 +182,9 @@ Results:
      [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
     ]
 
-    Time for 5=0.000282049179077148
+    Time for 5,4=0.000276088714599609
     Orthogonality=2.16840434497101e-15
-    Total time: 0.000437021255493164
+    Total time: 0.000426054000854492
 
     [
      [   -0.1313358   -0.57653872  -0.074092339   -0.66923001   -0.44384178]
@@ -195,8 +196,9 @@ Results:
 Disregarding sign changes, all three methods yielded the same result.
 
 Thus, although I didn't vectorize the code, the use of the Householder
-transformation to do a QR factorization makes its iterations within a
-C code, and thus is much faster, besides being more stable and accurate.
+transformation to do a QR factorization performs its iterations within a
+`C` code, and thus is much faster, besides being a more stable and
+accurate algorithm.
 
 I'm still not sure this may be applied to `Photonic` as the product
 between states is not a simple multiplication of vectors of
