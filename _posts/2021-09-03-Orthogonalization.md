@@ -420,6 +420,30 @@ the threading engine may be faster than using `PERL` loops.
     ./gramschmidtv.pl 5 4
     ./gramschmidt.pl 5 4
 
+Results:
+
+    GS vectorized with thread_define time for 5,4=0.000516891479492188
+    Orthogonality=3.12944115066216e-15
+    Total time: 0.000686883926391602
+
+    [
+     [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
+     [  0.87588479  -0.20720125   0.38458399   -0.1370171   0.15236453]
+     [  -0.3739352   0.19733953   0.88397582  -0.19940276 0.0074073153]
+     [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
+    ]
+
+    Gram Schmidt time for 5,4=0.000303983688354492
+    Orthogonality=3.12944115066216e-15
+    Total time: 0.000446081161499023
+
+    [
+     [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
+     [  0.87588479  -0.20720125   0.38458399   -0.1370171   0.15236453]
+     [  -0.3739352   0.19733953   0.88397582  -0.19940276 0.0074073153]
+     [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
+    ]
+
 To my surprise, given the confusing logic (the ndarray *B* is
 gradually modified in situ as the argument *A* is modified), *it
 worked!*
