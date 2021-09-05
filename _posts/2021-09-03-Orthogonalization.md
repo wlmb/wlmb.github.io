@@ -358,6 +358,93 @@ Results:
     Total time: 7.08088278770447
 
 
+# Vectorization with thread<sub>define</sub>
+
+After much thought, I found a tricky way to vectorize the ordinary
+Gram Schmidt orthogonalization. To that end I use `thread_define`, a
+function that builds threadable perl functions. Thus I define an auxiliary
+function that orthogonalizes one vector *A* to an orthonormal subset *0:p-1* of a set
+of vectors *B*. I add a scalar parameter with the index *p*. The
+routine modifies its input parameter *A*. Then I call this function
+using the full set of vectors *V* that I want to
+orthonormalize as an *nXm* ndarray as both *A* and *B*. Instead of a
+scalar *p* I use a sequence of numbers *0..m-1*. The threading engine
+of `PDL` than sets *p=0*, *A=V(:,0)* and normalizes it, then sets *p=1*,
+*A=V(:,1)*, orthogonalizes it to the previous normalized vector and
+normalizes it, then proceeds with *p=2,3&#x2026;m-1* orthogonalizing to all
+the previously orthogonalized vectors. My expectation is that using
+the threading engine may be faster than using `PERL` loops.
+
+    # Gram Schmidt orthogonalization, vectorized
+    use warnings;
+    use strict;
+    use v5.12;
+    use PDL;
+    use PDL::NiceSlice;
+    use PDL::PP;
+    use Time::HiRes qw(time);
+
+    $PDL::BIGPDL=1;
+    my ($N,$M)=@ARGV; # dimensions of system
+    die "Usage: ./gramschmidtv N M with N>=M" unless defined $N && defined $M and $N>=$M;
+    srand(0); # for reproducible tests.
+    my $V=random($N,$M); # M random N-vectors.
+    # The first index is the vector index i and the second the vector number: i,n
+    my $t0=time();
+    orthonormalize($V);
+    my $t1=time();
+    say "GS vectorized with thread_define time for $N,$M=", $t1-$t0;
+    # Check orthonormality
+    my $O=(($V->dummy(2)*$V->dummy(1))->sumover-identity($M))->abs->sum;
+    say "Orthogonality=$O";
+    my $t2=time();
+    say "Total time: ", $t2-$t0;
+    say $V if $N<=5;
+    sub orthonormalize {
+        my $V=shift;
+        ortho_aux($V, sequence($V->dim(1)), $V);
+    }
+    BEGIN{
+        thread_define 'ortho_aux([io]A(n); p(); B(n,m))', over {
+        # Orthogonalize one vector A to the first p orthonormal vectors of B.
+        # With threading it can orthogonalize an arbitrary set basis
+        # Modifies first argument
+        my($A, $p, $B)=@_;
+        my $N=$B(:,0:$p-1); # assume already normalized
+        $A-=(($A*$N)->sumover*$N->transpose)->sumover if $p>0;
+        my $q=($A*$A)->sumover->sqrt;
+        $A/=$q if $q!=0;
+        };
+    }
+
+    ./gramschmidtv.pl 5 4
+    ./gramschmidt.pl 5 4
+
+To my surprise, given the confusing logic (the ndarray *B* is
+gradually modified in situ as the argument *A* is modified), *it
+worked!*
+
+    ./gramschmidtv.pl 1000 1000
+    ./gramschmidt.pl 1000 1000
+
+Results:
+
+    GS vectorized with thread_define time for 1000,1000=4.72058701515198
+    Orthogonality=3.69307216405263e-08
+    Total time: 10.2687690258026
+    Gram Schmidt time for 1000,1000=4.92849779129028
+    Orthogonality=3.69626767899845e-08
+    Total time: 10.0826327800751
+
+The result is as good (or as bad) as the first Gram Schmidt
+program. It has the advantage that it may be easily generalized to arbitrary
+inner products. It can also be easily modified to deal with the
+modified Gram Schmidt algorithm.
+
+Unfortunately, there was no speed increase compared with the
+pure `PERL/PDL` code!
+
+
 # Conclusion
 
 The winner so far is still the QR factorization, but the PDL::PP
@@ -366,3 +453,6 @@ about 5 times faster for the 1000x1000 orthogonalization (I don't know
 why the orthogonality is close but not identical). It would be
 useful to be able to call `PERL,PDL` code from `PDL::PP` code to
 implement more complex inner products, but I guess it won't be too easy.
+The `thread_define` solution has the advantage that it can accomodate
+a generalized inner products, but it seems it didn't yield a speed
+increase.
