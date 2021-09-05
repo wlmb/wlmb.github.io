@@ -10,6 +10,9 @@ tags:
    - photonics
 ---
 
+
+# Introduction
+
 I have a code in my package for [Photonic and metamaterials calculations](https://github.com/wlmb/Photonic/)
 to do some orthonormalization within Haydock iterations
 for a large set of states. I use the standard Gram-Schmidt procedure,
@@ -17,8 +20,11 @@ which is iterative. For each vector, I substract its projections onto
 the previous elements. I used to store each vector as an element in an
 array, but after many modifications of the code, they are now part of
 a large ndarray. Thus Ed (@mohawk2) suggested to vectorize the
-procedure using PDL threading instead of PERL iterations. I told him I
-believe it is not possible. Here, I test a few alternatives.
+procedure using PDL threading instead of PERL iterations. I thought it
+is not possible, but here, I test a few alternatives.
+
+
+# Gram Schmidt
 
 The original version goes like this:
 
@@ -51,7 +57,9 @@ The original version goes like this:
     say $V if $N<=5;
 
 This program builds a square array of random numbers which I interpret
-as a collection of row vectors. I test it on a 1000x1000 matrix
+as a collection of row vectors and then orthogonalizes them
+iteratively using *|n'>=sum<sub>m<n</sub> |m><m|n>* and then normalizing *|n'>*.
+I test it on a 1000x1000 matrix
 
     ./gramschmidt.pl 1000 1000
 
@@ -65,7 +73,14 @@ Checking the orthogonality seems to take longer than the actual
 orthogonalization, but in this example it requires building a large
 1000x1000x1000 array.
 
-The modified Gram Schmidt
+
+# Modified Gram Schmidt
+
+In the modified version after each step orthogonalizing, say, *|n>* to *|m>*,
+building *|n'>=|n>-|m><m|n>*, I replace *|n>* by *|n'>* before
+orthogonalizing to the next basis vector *|m+1>*. The results would
+agree with the original procedure using infinite precision, but might
+differ for finite precision.
 
     # Modified Gram Schmidt orthogonalization, iterative
     use warnings;
@@ -108,8 +123,15 @@ Results:
 The procedure is much slower, due to the nested PERL iteration, but
 the precision is two orders of magnitude better.
 
-It seems that a QR factorization accomplishes the same. Thus I'll try
-my luck with mqr from PDL::LinearAlgebra.
+
+# QR factorization
+
+Using the Householder transformation, a matrix *V* may be decomposed
+into the product *QR*, where *Q* is an orthogonal matrix and R is upper
+triangular. Furthermore, the first *n* columns of *Q* span the same space
+as the first *n* columns of *V*. Thus, *QR* factorization accomplishes an
+orthogonalization of the columns of *V*. So, I'll try
+my luck with the `mqr` routine from `PDL::LinearAlgebra.`
 
     # QR factorization
     use warnings;
@@ -193,41 +215,6 @@ Results:
      [   0.25173294    0.43494961   0.047217819    0.13603524   -0.85247537]
     ]
 
-Results:
-
-    Time for 5,4=0.000288963317871094
-    Orthogonality=3.12944115066216e-15
-    Total time: 0.000442981719970703
-
-    [
-     [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
-     [  0.87588479  -0.20720125   0.38458399   -0.1370171   0.15236453]
-     [  -0.3739352   0.19733953   0.88397582  -0.19940276 0.0074073153]
-     [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
-    ]
-
-    Time for 5,4=0.000342130661010742
-    Orthogonality=1.6531914726059e-15
-    Total time: 0.000490188598632812
-
-    [
-     [   0.1313358   0.57653872  0.074092339   0.66923001   0.44384178]
-     [  0.87588479  -0.20720125   0.38458399   -0.1370171   0.15236453]
-     [  -0.3739352   0.19733953   0.88397582  -0.19940276 0.0074073153]
-     [  0.25173294   0.43494961  0.047217819   0.13603524  -0.85247537]
-    ]
-
-    Time for 5,4=0.000276088714599609
-    Orthogonality=2.16840434497101e-15
-    Total time: 0.000426054000854492
-
-    [
-     [   -0.1313358   -0.57653872  -0.074092339   -0.66923001   -0.44384178]
-     [   0.87588479   -0.20720125    0.38458399    -0.1370171    0.15236453]
-     [    0.3739352   -0.19733953   -0.88397582    0.19940276 -0.0074073153]
-     [   0.25173294    0.43494961   0.047217819    0.13603524   -0.85247537]
-    ]
-
 Disregarding sign changes, all three methods yielded the same result.
 
 Thus, although I didn't vectorize the code, the use of the Householder
@@ -239,8 +226,11 @@ I'm still not sure this may be applied to `Photonic` as the product
 between states is not a simple multiplication of vectors of
 numbers.
 
-Now I use PDL::PP to build a PDL program that interfaces directly to C
-code. I implement below the modified Gram Schmidt algorithm.
+
+# PDL::PP
+
+Now I use PDL::PP to build a PDL program that interfaces directly to
+C-like code. I implement below the modified Gram Schmidt algorithm.
 
     # Gram Schmidt orthogonalization, vectorized
     use warnings;
@@ -271,25 +261,25 @@ code. I implement below the modified Gram Schmidt algorithm.
     no PDL::NiceSlice;
     use Inline Pdlpp => <<'EOPP'
      pp_def('orthogonalize',
-            Pars=>'[io] V(n,m);',
+            Pars=>'[io] V(n,m);', # modify input matrix
             Code=>'
      	  loop(m)%{
      	      for(int l=0; l < m; ++l){
-     		  $GENERIC() p=0;
-     		  loop(n) %{
-     		      p+=$V()*$V(m=>l);
+     		  $GENERIC() p=0; /* accumulator for inner product */
+     		  loop(n) %{ /* component */
+     		      p+=$V()*$V(m=>l); /* syntax is strange */
      		  %}
-     		  loop(n) %{
+     		  loop(n) %{ /* subtract projection */
      		      $V()-=p*$V(m=>l);
      		  %}
      	      }
      	      $GENERIC() q=0;
-     	      loop(n) %{
+     	      loop(n) %{ /* square magnitude */
      		  q+=$V()*$V();
      	      %}
      	      q=sqrt(q);
      	      loop(n) %{
-     		  $V()/=q;
+     		  $V()/=q; /* normalize */
      	      %}
       	  %}
             ',
@@ -367,7 +357,12 @@ Results:
     Orthogonality=3.29437648148214e-10
     Total time: 7.08088278770447
 
-Thus the winner so far is still the QR factorization, but the PDL::PP
+
+# Conclusion
+
+The winner so far is still the QR factorization, but the PDL::PP
 code is as good as the modified PDL Gram Schmidt algorithm and is
-about 5 times faster for the 1000x1000 orthogonalization. I don't know
-why the orthogonality is close but not identical.
+about 5 times faster for the 1000x1000 orthogonalization (I don't know
+why the orthogonality is close but not identical). It would be
+useful to be able to call `PERL,PDL` code from `PDL::PP` code to
+implement more complex inner products, but I guess it won't be too easy.
