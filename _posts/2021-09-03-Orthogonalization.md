@@ -445,7 +445,8 @@ Results:
     ]
 
 To my surprise, given the confusing logic (the ndarray *B* is
-gradually modified in situ as the argument *A* is modified), *it
+silently modified in situ as the argument *A* is modified, as they
+share the same locations), *it
 worked!*
 
     ./gramschmidtv.pl 1000 1000
@@ -466,7 +467,8 @@ inner products. It can also be easily modified to deal with the
 modified Gram Schmidt algorithm.
 
 Unfortunately, there was no speed increase compared with the
-pure `PERL/PDL` code!
+pure `PERL/PDL` code! Nevertheless, it may be threaded over additional
+dimensions if desired, with no additional work.
 
 
 # Conclusion
@@ -478,5 +480,11 @@ why the orthogonality is close but not identical). It would be
 useful to be able to call `PERL,PDL` code from `PDL::PP` code to
 implement more complex inner products, but I guess it won't be too easy.
 The `thread_define` solution has the advantage that it can accomodate
-a generalized inner products, but it seems it didn't yield a speed
-increase.
+a generalized inner products, and it can be threaded over additional
+dimensions if present, but it seems it didn't yield a speed
+increase. Maybe, given an algorithm, there is no much speed difference
+if the main iteration is done in `C` or in `PERL`, as the inner
+iteration is done in `C` but is so large that it eats up most of the
+time. Therefore, maybe the next step is to program the QR algorithm in
+such a way that it may accomodate other scalar products. Finally, I
+would have to test the complex cases.
