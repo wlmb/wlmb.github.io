@@ -227,9 +227,9 @@ between states is not a simple multiplication of vectors of
 numbers.
 
 
-# PDL::PP
+# Inline::Pdlpp
 
-Now I use PDL::PP to build a PDL program that interfaces directly to
+Now I use Inline::Pdlpp to build a PDL program that interfaces directly to
 C-like code. I implement below the modified Gram Schmidt algorithm.
 
     # Gram Schmidt orthogonalization, vectorized
@@ -238,7 +238,6 @@ C-like code. I implement below the modified Gram Schmidt algorithm.
     use v5.12;
     use PDL;
     use PDL::NiceSlice;
-    use PDL::PP;
     use Time::HiRes qw(time);
 
     $PDL::BIGPDL=1;
@@ -250,7 +249,7 @@ C-like code. I implement below the modified Gram Schmidt algorithm.
     my $t0=time();
     $V->orthogonalize();
     my $t1=time();
-    say "Modified GS PDL::PP time for $N,$M=", $t1-$t0;
+    say "Modified GS Inline::Pdlpp time for $N,$M=", $t1-$t0;
     # Check orthonormality
     my $O=(($V->dummy(2)*$V->dummy(1))->sumover-identity($M))->abs->sum;
     say "Orthogonality=$O";
@@ -326,7 +325,7 @@ Results:
      [   0.25173294    0.43494961   0.047217819    0.13603524   -0.85247537]
     ]
 
-    Modified GS PDL::PP time for 5,4=5.96046447753906e-06
+    Modified GS Inline::Pdlpp time for 5,4=5.96046447753906e-06
     Orthogonality=1.6531914726059e-15
     Total time: 0.000267982482910156
 
@@ -353,7 +352,7 @@ Results:
     QR time for 1000,1000=0.338634014129639
     Orthogonality=2.99989157025321e-11
     Total time: 6.98031520843506
-    Modified GS PDL::PP time for 1000,1000=2.36270093917847
+    Modified GS Inline::Pdlpp time for 1000,1000=2.36270093917847
     Orthogonality=3.29437648148214e-10
     Total time: 7.08088278770447
 
@@ -381,7 +380,6 @@ the threading engine may be faster than using `PERL` loops.
     use v5.12;
     use PDL;
     use PDL::NiceSlice;
-    use PDL::PP;
     use Time::HiRes qw(time);
 
     $PDL::BIGPDL=1;
@@ -469,15 +467,20 @@ modified Gram Schmidt algorithm.
 Unfortunately, there was no speed increase compared with the
 pure `PERL/PDL` code! Nevertheless, it may be threaded over additional
 dimensions if desired, with no additional work.
+However, this approach depends on PDL threading in ascending order of
+the index. Thus I worry that it will fail if the calculation is
+inadvertently parallelized, probably using PDL::ParallelCPU. I tried
+to test this, but I was unable to convince PDL to split my code into
+parallel threads.
 
 
 # Conclusion
 
-The winner so far is still the QR factorization, but the PDL::PP
+The winner so far is still the QR factorization, but the Inline::Pdlpp
 code is as good as the modified PDL Gram Schmidt algorithm and is
 about 5 times faster for the 1000x1000 orthogonalization (I don't know
 why the orthogonality is close but not identical). It would be
-useful to be able to call `PERL,PDL` code from `PDL::PP` code to
+useful to be able to call `PERL,PDL` code from `Inline::Pdlpp` code to
 implement more complex inner products, but I guess it won't be too easy.
 The `thread_define` solution has the advantage that it can accomodate
 a generalized inner products, and it can be threaded over additional
