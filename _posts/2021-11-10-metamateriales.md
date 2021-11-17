@@ -13,4 +13,4 @@ submitted to the proceedings of the summer school *XXVII Escuela de
 Verano en Física* organized by the *Instituto de Física* and the
 *Instituto de Ciencias Físicas* of UNAM, where I taught
 a short course on the calculation of optical properties of
-metamaterials (in Spanish).
+metamaterials (in Spanish). They can also be found at the [arxiv](https://arxiv.org/abs/2111.05965).
