@@ -22,20 +22,20 @@ con la textura espacial del sistema. Este efecto es conocido como el
 *efecto de campo local*. Un ejemplo muy conocido de este efecto es el
 de un sólido isotrópico modelado como una red cúbica de entidades
 polarizables puntuales caracterizadas por su polarizabilidad
-<img src="ltximg/2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" alt="2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" />. Sin efecto de campo local, la respuesta dieléctrica
+<img src="ltximg/2021-05-29-campolocal_e2c293158c3637fe6f8e64df392e83613506a535.png" alt="2021-05-29-campolocal_e2c293158c3637fe6f8e64df392e83613506a535.png" />. Sin efecto de campo local, la respuesta dieléctrica
 macroscópica sería
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_3e0ecd39deae07f68899706197251b8b4f08e2dc.png" alt="2021-05-29-campolocal_3e0ecd39deae07f68899706197251b8b4f08e2dc.png" />
+<img src="ltximg/2021-05-29-campolocal_185de58eb13e007cfc23426d5e68ba94c3d24912.png" alt="2021-05-29-campolocal_185de58eb13e007cfc23426d5e68ba94c3d24912.png" />
 </span>
 <span class="equation-label">
 1
 </span>
 </div>
 
-con <img src="ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" /> la densidad de
+con <img src="ltximg/2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" alt="2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" /> la densidad de
 las entidades polarizables. Sin embargo, al tomar en cuenta que la
 polarizabilidad es la respuesta no sólo al campo externo, sino también
 al campo producido por todos los dipolos vecinos, la ecuación anterior
@@ -44,7 +44,7 @@ se ve reemplazada por la relación de Claussius-Mossoti,
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_73135f54abebe967ab72ab3e64a40f21e1a8d9ee.png" alt="2021-05-29-campolocal_73135f54abebe967ab72ab3e64a40f21e1a8d9ee.png" />
+<img src="ltximg/2021-05-29-campolocal_02ef850eed7553198ea9e29ee43c13c10a13ddad.png" alt="2021-05-29-campolocal_02ef850eed7553198ea9e29ee43c13c10a13ddad.png" />
 </span>
 <span class="equation-label">
 2
@@ -54,7 +54,7 @@ se ve reemplazada por la relación de Claussius-Mossoti,
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_6e86be3f200a33a9bc9e35a5f830baa58418c191.png" alt="2021-05-29-campolocal_6e86be3f200a33a9bc9e35a5f830baa58418c191.png" />
+<img src="ltximg/2021-05-29-campolocal_d2fda05fc40e9d22207caf89800faa5ce01bc44f.png" alt="2021-05-29-campolocal_d2fda05fc40e9d22207caf89800faa5ce01bc44f.png" />
 </span>
 <span class="equation-label">
 3
@@ -70,16 +70,16 @@ superficial y explorar sus consecuencias.
 
 # Teoría
 
-Consideremos una red de Bravais bidimensional <img src="ltximg/2021-05-29-campolocal_5bd063f08144ad99558f0a7157e8c6078d6b815a.png" alt="2021-05-29-campolocal_5bd063f08144ad99558f0a7157e8c6078d6b815a.png" /> en el plano
-<img src="ltximg/2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" alt="2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" /> ocupada por
-cargas puntuales unitarias <img src="ltximg/2021-05-29-campolocal_3f8c539dd8aa8f627909271d43e4e37d0094eef2.png" alt="2021-05-29-campolocal_3f8c539dd8aa8f627909271d43e4e37d0094eef2.png" />. El potencial electrostático
-<img src="ltximg/2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" alt="2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" /> que
-produciría en un punto <img src="ltximg/2021-05-29-campolocal_245db958c78a5f721d51f4241c0090bf048fdf4b.png" alt="2021-05-29-campolocal_245db958c78a5f721d51f4241c0090bf048fdf4b.png" /> es
+Consideremos una red de Bravais bidimensional <img src="ltximg/2021-05-29-campolocal_704c1dd5632168584e984b017c06a70ccd8554ad.png" alt="2021-05-29-campolocal_704c1dd5632168584e984b017c06a70ccd8554ad.png" /> en el plano
+<img src="ltximg/2021-05-29-campolocal_587a29d7c310ba623560fbfea3313a6af60d74f4.png" alt="2021-05-29-campolocal_587a29d7c310ba623560fbfea3313a6af60d74f4.png" /> ocupada por
+cargas puntuales unitarias <img src="ltximg/2021-05-29-campolocal_4a295e90e977424bd9a61bc10c16590e1a29b95a.png" alt="2021-05-29-campolocal_4a295e90e977424bd9a61bc10c16590e1a29b95a.png" />. El potencial electrostático
+<img src="ltximg/2021-05-29-campolocal_b0d5e0f8341d1b06b8e355f512ea369a635604d5.png" alt="2021-05-29-campolocal_b0d5e0f8341d1b06b8e355f512ea369a635604d5.png" /> que
+produciría en un punto <img src="ltximg/2021-05-29-campolocal_48b6e224e8965a6f07d03a0675bff458011e2746.png" alt="2021-05-29-campolocal_48b6e224e8965a6f07d03a0675bff458011e2746.png" /> es
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_6a1d30764eb16698009f0ad68c5f61a9bf01883d.png" alt="2021-05-29-campolocal_6a1d30764eb16698009f0ad68c5f61a9bf01883d.png" />
+<img src="ltximg/2021-05-29-campolocal_3cb1b6cf287ee938536b8fbf19fa5e0fba4db98a.png" alt="2021-05-29-campolocal_3cb1b6cf287ee938536b8fbf19fa5e0fba4db98a.png" />
 </span>
 <span class="equation-label">
 4
@@ -93,33 +93,33 @@ ecuación diferencial del potencial,
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_35677304c526c65df6e95a2245c8ba2f7f04b026.png" alt="2021-05-29-campolocal_35677304c526c65df6e95a2245c8ba2f7f04b026.png" />
+<img src="ltximg/2021-05-29-campolocal_2fd797ac9d1757f7d973617d25734ba3669427e1.png" alt="2021-05-29-campolocal_2fd797ac9d1757f7d973617d25734ba3669427e1.png" />
 </span>
 <span class="equation-label">
 5
 </span>
 </div>
 
-en el espacio recíproco <img src="ltximg/2021-05-29-campolocal_ca99b1d2c197d62429b20b2e07f1d43f9982386c.png" alt="2021-05-29-campolocal_ca99b1d2c197d62429b20b2e07f1d43f9982386c.png" /> definido por <img src="ltximg/2021-05-29-campolocal_5832a5dcfb21fcb6b7aea9822cda13ee31f0bbfb.png" alt="2021-05-29-campolocal_5832a5dcfb21fcb6b7aea9822cda13ee31f0bbfb.png" />,
+en el espacio recíproco <img src="ltximg/2021-05-29-campolocal_bb07ac7f892cf16c9b711df38b56c6952159203a.png" alt="2021-05-29-campolocal_bb07ac7f892cf16c9b711df38b56c6952159203a.png" /> definido por <img src="ltximg/2021-05-29-campolocal_becc1856f40d6e5e5c940e3337c815de35afd10d.png" alt="2021-05-29-campolocal_becc1856f40d6e5e5c940e3337c815de35afd10d.png" />,
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_2a9132df74afbca1440bcd94b1e882bb86a637d7.png" alt="2021-05-29-campolocal_2a9132df74afbca1440bcd94b1e882bb86a637d7.png" />
+<img src="ltximg/2021-05-29-campolocal_8c2cce7c2fa17bf8d3ea9a670bc3de0652e6cb40.png" alt="2021-05-29-campolocal_8c2cce7c2fa17bf8d3ea9a670bc3de0652e6cb40.png" />
 </span>
 <span class="equation-label">
 6
 </span>
 </div>
 
-con <img src="ltximg/2021-05-29-campolocal_06b0064c464f9c3ff4ebfd5c657323cf3a067d9a.png" alt="2021-05-29-campolocal_06b0064c464f9c3ff4ebfd5c657323cf3a067d9a.png" /> es el coeficiente de Fourier 2D del potencial
-<img src="ltximg/2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" alt="2021-05-29-campolocal_d21d844468ea5a5c9bc532fa537952b9c9c42b87.png" /> evaluado a la altura <img src="ltximg/2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" alt="2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" />.
-La solución que decae al alejarnos del plano <img src="ltximg/2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" alt="2021-05-29-campolocal_adf8662bae1b46aa38b626568e162ef56c7e11ff.png" /> para <img src="ltximg/2021-05-29-campolocal_02e5d3c38c08a90159a6d4ee5037f30f7e5181cc.png" alt="2021-05-29-campolocal_02e5d3c38c08a90159a6d4ee5037f30f7e5181cc.png" /> es
+con <img src="ltximg/2021-05-29-campolocal_fc00c730231b2880e54eb5ca170b74e7e0e879be.png" alt="2021-05-29-campolocal_fc00c730231b2880e54eb5ca170b74e7e0e879be.png" /> es el coeficiente de Fourier 2D del potencial
+<img src="ltximg/2021-05-29-campolocal_b0d5e0f8341d1b06b8e355f512ea369a635604d5.png" alt="2021-05-29-campolocal_b0d5e0f8341d1b06b8e355f512ea369a635604d5.png" /> evaluado a la altura <img src="ltximg/2021-05-29-campolocal_3612876dfbe476ef94d2b3f426edd001d067800b.png" alt="2021-05-29-campolocal_3612876dfbe476ef94d2b3f426edd001d067800b.png" />.
+La solución que decae al alejarnos del plano <img src="ltximg/2021-05-29-campolocal_587a29d7c310ba623560fbfea3313a6af60d74f4.png" alt="2021-05-29-campolocal_587a29d7c310ba623560fbfea3313a6af60d74f4.png" /> para <img src="ltximg/2021-05-29-campolocal_a81c575ede89abd139f128164f964cb3231bfd28.png" alt="2021-05-29-campolocal_a81c575ede89abd139f128164f964cb3231bfd28.png" /> es
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_10a3822d3c72d38b0f50d19bff483af87953eb59.png" alt="2021-05-29-campolocal_10a3822d3c72d38b0f50d19bff483af87953eb59.png" />
+<img src="ltximg/2021-05-29-campolocal_868965c0631ad078ef61434b05bb7a39e92adceb.png" alt="2021-05-29-campolocal_868965c0631ad078ef61434b05bb7a39e92adceb.png" />
 </span>
 <span class="equation-label">
 7
@@ -131,64 +131,64 @@ Regresando al espacio real, el potencial queda dado por
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_0078513d6cd5dfde1455f57b9c2c0815b3860607.png" alt="2021-05-29-campolocal_0078513d6cd5dfde1455f57b9c2c0815b3860607.png" />
+<img src="ltximg/2021-05-29-campolocal_fd9206e932e9305e2cfa84bd4ba7877bd4d20a81.png" alt="2021-05-29-campolocal_fd9206e932e9305e2cfa84bd4ba7877bd4d20a81.png" />
 </span>
 <span class="equation-label">
 8
 </span>
 </div>
 
-donde añadimos al termino <img src="ltximg/2021-05-29-campolocal_8b524674698b2174331edbb50aa5755e605322b1.png" alt="2021-05-29-campolocal_8b524674698b2174331edbb50aa5755e605322b1.png" /> correspondiente al potencial producido
+donde añadimos al termino <img src="ltximg/2021-05-29-campolocal_7cde967cd01035e6fa98ac904b2648dc17982ba4.png" alt="2021-05-29-campolocal_7cde967cd01035e6fa98ac904b2648dc17982ba4.png" /> correspondiente al potencial producido
 por una película uniformemente cargada, y dónde introdujimos los
 vectores
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_ba255325731d2f9240a249cdaf65d236796bd2e6.png" alt="2021-05-29-campolocal_ba255325731d2f9240a249cdaf65d236796bd2e6.png" />
+<img src="ltximg/2021-05-29-campolocal_9b9c81052f95749b13dce3686e0daffcbd0571d3.png" alt="2021-05-29-campolocal_9b9c81052f95749b13dce3686e0daffcbd0571d3.png" />
 </span>
 <span class="equation-label">
 9
 </span>
 </div>
 
-y empleamos el signo <img src="ltximg/2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" alt="2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" /> cuando <img src="ltximg/2021-05-29-campolocal_dd60e5a847ef19e198dfda430bad84b6395521a4.png" alt="2021-05-29-campolocal_dd60e5a847ef19e198dfda430bad84b6395521a4.png" /> y el signo <img src="ltximg/2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" alt="2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" /> cuando
-<img src="ltximg/2021-05-29-campolocal_1d735b9bca1aba8f58c8a18a98f3681713f8452a.png" alt="2021-05-29-campolocal_1d735b9bca1aba8f58c8a18a98f3681713f8452a.png" />. Esta es una serie rápidamente convergente siempre y cuando
-<img src="ltximg/2021-05-29-campolocal_0593ea6674b560b1eb4caca0153e4e89ba43a996.png" alt="2021-05-29-campolocal_0593ea6674b560b1eb4caca0153e4e89ba43a996.png" />.
+y empleamos el signo <img src="ltximg/2021-05-29-campolocal_ef2955fd00ce4f9b56df0676f4b6eaa448d3097c.png" alt="2021-05-29-campolocal_ef2955fd00ce4f9b56df0676f4b6eaa448d3097c.png" /> cuando <img src="ltximg/2021-05-29-campolocal_870a960f35d25a591f1ab39f08922b163eb7715a.png" alt="2021-05-29-campolocal_870a960f35d25a591f1ab39f08922b163eb7715a.png" /> y el signo <img src="ltximg/2021-05-29-campolocal_27ad620a0d2a5d229a29c1afead98aefbe1768ce.png" alt="2021-05-29-campolocal_27ad620a0d2a5d229a29c1afead98aefbe1768ce.png" /> cuando
+<img src="ltximg/2021-05-29-campolocal_0f083b0254b9fbb7866309ff1ea45a31444bb302.png" alt="2021-05-29-campolocal_0f083b0254b9fbb7866309ff1ea45a31444bb302.png" />. Esta es una serie rápidamente convergente siempre y cuando
+<img src="ltximg/2021-05-29-campolocal_94ebf9218a19eebe66222c90a1f3ac6b3f6d6c7d.png" alt="2021-05-29-campolocal_94ebf9218a19eebe66222c90a1f3ac6b3f6d6c7d.png" />.
 
 Consideremos ahora la misma red de Bravais, pero ocupada por
-dipolos idénticos <img src="ltximg/2021-05-29-campolocal_93058fc8e37a7a3782b358c6cdf9de825f57dfe1.png" alt="2021-05-29-campolocal_93058fc8e37a7a3782b358c6cdf9de825f57dfe1.png" />. La densidad de carga sería entonces
+dipolos idénticos <img src="ltximg/2021-05-29-campolocal_1db842fad2c838b023ea1f53882dff413c51c20e.png" alt="2021-05-29-campolocal_1db842fad2c838b023ea1f53882dff413c51c20e.png" />. La densidad de carga sería entonces
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_7dc5164201c4dd8c1e07f36d87d75a73d01c386e.png" alt="2021-05-29-campolocal_7dc5164201c4dd8c1e07f36d87d75a73d01c386e.png" />
+<img src="ltximg/2021-05-29-campolocal_d32c5e14e6d42db7dc90dcfd458c1fba21608529.png" alt="2021-05-29-campolocal_d32c5e14e6d42db7dc90dcfd458c1fba21608529.png" />
 </span>
 <span class="equation-label">
 10
 </span>
 </div>
 
-i.e., operamos sobre la densidad monopolar con el operador <img src="ltximg/2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" alt="2021-05-29-campolocal_100d471bdd248589d2ab2bb17b6484e5e191ce5d.png" />. Luego,
-el potencial dipolar <img src="ltximg/2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" alt="2021-05-29-campolocal_ffa97778ce04ddeb2dd26bf46f1ef9cbbc8d31dc.png" /> se obtiene aplicando el mismo
-operador sobre el potencial monopolar, <img src="ltximg/2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" alt="2021-05-29-campolocal_ace97a11986c0dc0081c3edc613c9b9a5a2c5f20.png" />,
+i.e., operamos sobre la densidad monopolar con el operador <img src="ltximg/2021-05-29-campolocal_e5b1f0031712fc25db5cecd710fa20757bada6cc.png" alt="2021-05-29-campolocal_e5b1f0031712fc25db5cecd710fa20757bada6cc.png" />. Luego,
+el potencial dipolar <img src="ltximg/2021-05-29-campolocal_11290640cdf3f1b3255efced424d68d9734e1b80.png" alt="2021-05-29-campolocal_11290640cdf3f1b3255efced424d68d9734e1b80.png" /> se obtiene aplicando el mismo
+operador sobre el potencial monopolar, <img src="ltximg/2021-05-29-campolocal_32edb2c7b21d92791f4fc6dc1d6b8bf6636aee51.png" alt="2021-05-29-campolocal_32edb2c7b21d92791f4fc6dc1d6b8bf6636aee51.png" />,
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_edfd09360292afba65e9b2962900eb438e00a3a9.png" alt="2021-05-29-campolocal_edfd09360292afba65e9b2962900eb438e00a3a9.png" />
+<img src="ltximg/2021-05-29-campolocal_ed275a6ebc1beb4ccce37426e74f065633c6f39e.png" alt="2021-05-29-campolocal_ed275a6ebc1beb4ccce37426e74f065633c6f39e.png" />
 </span>
 <span class="equation-label">
 11
 </span>
 </div>
 
-y el campo eléctrico <img src="ltximg/2021-05-29-campolocal_f6cc90dac529e4a22efc531d6239dab3c04b1ce0.png" alt="2021-05-29-campolocal_f6cc90dac529e4a22efc531d6239dab3c04b1ce0.png" />,
+y el campo eléctrico <img src="ltximg/2021-05-29-campolocal_697c13de450a55970105f106bcb2dda7335a74c3.png" alt="2021-05-29-campolocal_697c13de450a55970105f106bcb2dda7335a74c3.png" />,
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_956ed19ef0cd6b720caafa547f8cb7ab240ff297.png" alt="2021-05-29-campolocal_956ed19ef0cd6b720caafa547f8cb7ab240ff297.png" />
+<img src="ltximg/2021-05-29-campolocal_4fed38b9429a341d83f231217a1d0300997cc08c.png" alt="2021-05-29-campolocal_4fed38b9429a341d83f231217a1d0300997cc08c.png" />
 </span>
 <span class="equation-label">
 12
@@ -203,60 +203,60 @@ polarizable es
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_91479f064a44d251206ab7a0aa18da0ff257dfdb.png" alt="2021-05-29-campolocal_91479f064a44d251206ab7a0aa18da0ff257dfdb.png" />
+<img src="ltximg/2021-05-29-campolocal_ea0da930276895c49d520032bf4988dcd2c71187.png" alt="2021-05-29-campolocal_ea0da930276895c49d520032bf4988dcd2c71187.png" />
 </span>
 <span class="equation-label">
 13
 </span>
 </div>
 
-donde <img src="ltximg/2021-05-29-campolocal_8ba83390c2f67c25e1aecef0033f9ecfb3fc7b31.png" alt="2021-05-29-campolocal_8ba83390c2f67c25e1aecef0033f9ecfb3fc7b31.png" /> representa el campo eléctrico en el
-sitio <img src="ltximg/2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" alt="2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" /> producido por un dipolo que <img src="ltximg/2021-05-29-campolocal_eb8c59938c801ac6c33df268718d10c7f3bf498f.png" alt="2021-05-29-campolocal_eb8c59938c801ac6c33df268718d10c7f3bf498f.png" /> en el sitio
-<img src="ltximg/2021-05-29-campolocal_cae2d4d31c691e645c5b4eb88ae07cc3b4c5825f.png" alt="2021-05-29-campolocal_cae2d4d31c691e645c5b4eb88ae07cc3b4c5825f.png" />. Suponiendo que todos los dipolos de un plano son equivalentes,
+donde <img src="ltximg/2021-05-29-campolocal_bddc27b92ee3905056a424913c476e888029f111.png" alt="2021-05-29-campolocal_bddc27b92ee3905056a424913c476e888029f111.png" /> representa el campo eléctrico en el
+sitio <img src="ltximg/2021-05-29-campolocal_dffc34e67b8b42cbdf0d40922d88834991f61db0.png" alt="2021-05-29-campolocal_dffc34e67b8b42cbdf0d40922d88834991f61db0.png" /> producido por un dipolo que <img src="ltximg/2021-05-29-campolocal_2c67c71625a696f975ef6b8b98d00ed9f7640b47.png" alt="2021-05-29-campolocal_2c67c71625a696f975ef6b8b98d00ed9f7640b47.png" /> en el sitio
+<img src="ltximg/2021-05-29-campolocal_8fae7b1b46805761452f5e361856d70580cb5ec3.png" alt="2021-05-29-campolocal_8fae7b1b46805761452f5e361856d70580cb5ec3.png" />. Suponiendo que todos los dipolos de un plano son equivalentes,
 podemos  podemos sumar las interacciones por planos
 cristalinos. Definimos entonces
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_6857f5517101af444c2be2d8adf1505a229c7f92.png" alt="2021-05-29-campolocal_6857f5517101af444c2be2d8adf1505a229c7f92.png" />
+<img src="ltximg/2021-05-29-campolocal_64fd91edab0083ef62d6e53e54bac48da343c6e9.png" alt="2021-05-29-campolocal_64fd91edab0083ef62d6e53e54bac48da343c6e9.png" />
 </span>
 <span class="equation-label">
 14
 </span>
 </div>
 
-donde <img src="ltximg/2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" alt="2021-05-29-campolocal_802f985f8a255b1976f3886fa2d0c180979dd84c.png" /> es un sitio cualquiera del plano <img src="ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" />. Usando el campo
+donde <img src="ltximg/2021-05-29-campolocal_dffc34e67b8b42cbdf0d40922d88834991f61db0.png" alt="2021-05-29-campolocal_dffc34e67b8b42cbdf0d40922d88834991f61db0.png" /> es un sitio cualquiera del plano <img src="ltximg/2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" alt="2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" />. Usando el campo
 dipolar previo,
 la interacción entre planos cristalinos está dada por el tensor
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_66dd8b87e9a2253b8bdb8e24fef6ed7f5f0af22e.png" alt="2021-05-29-campolocal_66dd8b87e9a2253b8bdb8e24fef6ed7f5f0af22e.png" />
+<img src="ltximg/2021-05-29-campolocal_59742332bafba00c7a6cb2d97f5c1b1b525a7a68.png" alt="2021-05-29-campolocal_59742332bafba00c7a6cb2d97f5c1b1b525a7a68.png" />
 </span>
 <span class="equation-label">
 15
 </span>
 </div>
 
-donde <img src="ltximg/2021-05-29-campolocal_7e6baf5ed4d02877a23853fc7409ffba0c4bd99d.png" alt="2021-05-29-campolocal_7e6baf5ed4d02877a23853fc7409ffba0c4bd99d.png" /> son vectores recíprocos bidimensionales, <img src="ltximg/2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" alt="2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" /> es
-un vector que va de un sitio del plano <img src="ltximg/2021-05-29-campolocal_b2c1faafe389054fb76ed2f22fee4e477bf9270f.png" alt="2021-05-29-campolocal_b2c1faafe389054fb76ed2f22fee4e477bf9270f.png" /> a uno del plano <img src="ltximg/2021-05-29-campolocal_5f4e7b21a3ea44a39e70d22eda9e647299e9fdd7.png" alt="2021-05-29-campolocal_5f4e7b21a3ea44a39e70d22eda9e647299e9fdd7.png" />, y
-donde usamos el signo <img src="ltximg/2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" alt="2021-05-29-campolocal_f91998fc131e577beb667681882370ddce95c855.png" /> cuando <img src="ltximg/2021-05-29-campolocal_e83c1e3c5a1329ebf295197f46574b8d54e3e56b.png" alt="2021-05-29-campolocal_e83c1e3c5a1329ebf295197f46574b8d54e3e56b.png" /> y el signo <img src="ltximg/2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" alt="2021-05-29-campolocal_468865871d0a1477f3412bcd09e73bbc72797741.png" /> cuando <img src="ltximg/2021-05-29-campolocal_bba2d0c3bdc650d1475f9056469f1c20200759fa.png" alt="2021-05-29-campolocal_bba2d0c3bdc650d1475f9056469f1c20200759fa.png" />.
-Para el caso <img src="ltximg/2021-05-29-campolocal_262ff47c938b92dc26114f00b931aa4e081b2a88.png" alt="2021-05-29-campolocal_262ff47c938b92dc26114f00b931aa4e081b2a88.png" /> podemos usar la regla de suma
+donde <img src="ltximg/2021-05-29-campolocal_8f6e718fae1e0aa83a7403ddeaa8d416a474a963.png" alt="2021-05-29-campolocal_8f6e718fae1e0aa83a7403ddeaa8d416a474a963.png" /> son vectores recíprocos bidimensionales, <img src="ltximg/2021-05-29-campolocal_f719d5849b622408ce423485031ff0992b2e9dd4.png" alt="2021-05-29-campolocal_f719d5849b622408ce423485031ff0992b2e9dd4.png" /> es
+un vector que va de un sitio del plano <img src="ltximg/2021-05-29-campolocal_827aac8196c52224577029d63bc55d00f49747de.png" alt="2021-05-29-campolocal_827aac8196c52224577029d63bc55d00f49747de.png" /> a uno del plano <img src="ltximg/2021-05-29-campolocal_e551bcb3eed6d2bb41f08e6b40e53348bb5add08.png" alt="2021-05-29-campolocal_e551bcb3eed6d2bb41f08e6b40e53348bb5add08.png" />, y
+donde usamos el signo <img src="ltximg/2021-05-29-campolocal_ef2955fd00ce4f9b56df0676f4b6eaa448d3097c.png" alt="2021-05-29-campolocal_ef2955fd00ce4f9b56df0676f4b6eaa448d3097c.png" /> cuando <img src="ltximg/2021-05-29-campolocal_22ef989ff080025d5f7bc21a31b0886d2e0c898b.png" alt="2021-05-29-campolocal_22ef989ff080025d5f7bc21a31b0886d2e0c898b.png" /> y el signo <img src="ltximg/2021-05-29-campolocal_27ad620a0d2a5d229a29c1afead98aefbe1768ce.png" alt="2021-05-29-campolocal_27ad620a0d2a5d229a29c1afead98aefbe1768ce.png" /> cuando <img src="ltximg/2021-05-29-campolocal_bab61c43e2bb93075b104ea626fb0226b7678dc5.png" alt="2021-05-29-campolocal_bab61c43e2bb93075b104ea626fb0226b7678dc5.png" />.
+Para el caso <img src="ltximg/2021-05-29-campolocal_ed56d73b377e77de5921cc61f29aead2a977d2fc.png" alt="2021-05-29-campolocal_ed56d73b377e77de5921cc61f29aead2a977d2fc.png" /> podemos usar la regla de suma
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_fbf711bdd9852efa832e6ee4053d189fc9a51ddb.png" alt="2021-05-29-campolocal_fbf711bdd9852efa832e6ee4053d189fc9a51ddb.png" />
+<img src="ltximg/2021-05-29-campolocal_a24edcf6f274d323a983658d2d4aee8edcf286bb.png" alt="2021-05-29-campolocal_a24edcf6f274d323a983658d2d4aee8edcf286bb.png" />
 </span>
 <span class="equation-label">
 16
 </span>
 </div>
 
-en el bulto del sistema, con <img src="ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" /> la densidad de entidades
-polarizables, y despejar <img src="ltximg/2021-05-29-campolocal_2759b2d6a699190ea40c868b682c1af506157c8e.png" alt="2021-05-29-campolocal_2759b2d6a699190ea40c868b682c1af506157c8e.png" /> (sin suma), la autointeracción
+en el bulto del sistema, con <img src="ltximg/2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" alt="2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" /> la densidad de entidades
+polarizables, y despejar <img src="ltximg/2021-05-29-campolocal_576fb66b122a509b66e98253e69044b4c607308c.png" alt="2021-05-29-campolocal_576fb66b122a509b66e98253e69044b4c607308c.png" /> (sin suma), la autointeracción
 dipolar de un plano.
 
 
@@ -345,19 +345,19 @@ Define, lee y valida parámetros de la línea de comandos.
     usage $options, "dmax should be positive" unless $dmax > 0;
     usage $options, "N should be positive" unless $N > 0;
 
-Calcula el área de la celda unitaria 2D <img src="ltximg/2021-05-29-campolocal_c3dc570205163ecb76c7206a14462fa66c686ba8.png" alt="2021-05-29-campolocal_c3dc570205163ecb76c7206a14462fa66c686ba8.png" />, el volumen de la celda
-unitaria 3D <img src="ltximg/2021-05-29-campolocal_d6c0b8bdc1aa19f4b2ddb91aba07957479f16b0f.png" alt="2021-05-29-campolocal_d6c0b8bdc1aa19f4b2ddb91aba07957479f16b0f.png" /> y la densidad
+Calcula el área de la celda unitaria 2D <img src="ltximg/2021-05-29-campolocal_7e7c85cc5ceb310502ceb36c62513e51f29e5794.png" alt="2021-05-29-campolocal_7e7c85cc5ceb310502ceb36c62513e51f29e5794.png" />, el volumen de la celda
+unitaria 3D <img src="ltximg/2021-05-29-campolocal_c63faddebdfc03981ec1914c347cfbac8cae0794.png" alt="2021-05-29-campolocal_c63faddebdfc03981ec1914c347cfbac8cae0794.png" /> y la densidad
 
     # name: area
     my $A=($a->((0))*$b->((1))-$a->((1))*$b->((0)))->abs;
     my $V=$A*$c->((2));
     my $density=1/$V;
 
-Genera la red recíproca <img src="ltximg/2021-05-29-campolocal_dd312f024d9d9a8f9061b24d9ef1df5a1bbab291.png" alt="2021-05-29-campolocal_dd312f024d9d9a8f9061b24d9ef1df5a1bbab291.png" />, donde
-<img src="ltximg/2021-05-29-campolocal_30545d589a777bee8a835bc4e86f74645922db70.png" alt="2021-05-29-campolocal_30545d589a777bee8a835bc4e86f74645922db70.png" /> son los elementos de la base dual,
-<img src="ltximg/2021-05-29-campolocal_6777fd1faa1343238392c6534cabcd2091620b06.png" alt="2021-05-29-campolocal_6777fd1faa1343238392c6534cabcd2091620b06.png" />. En 2D,
-<img src="ltximg/2021-05-29-campolocal_6c63c3cdb7830829d787fad0917d06d3e2318018.png" alt="2021-05-29-campolocal_6c63c3cdb7830829d787fad0917d06d3e2318018.png" /> y
-<img src="ltximg/2021-05-29-campolocal_980ce7c651e278f41b1fe3e6cfbe822c461d31d8.png" alt="2021-05-29-campolocal_980ce7c651e278f41b1fe3e6cfbe822c461d31d8.png" />. En el programa
+Genera la red recíproca <img src="ltximg/2021-05-29-campolocal_fb9030a975bb06fcb40f57328479db5a26f217f5.png" alt="2021-05-29-campolocal_fb9030a975bb06fcb40f57328479db5a26f217f5.png" />, donde
+<img src="ltximg/2021-05-29-campolocal_3b26a342f6c18306e1ea9e97cbb18de91f3063b0.png" alt="2021-05-29-campolocal_3b26a342f6c18306e1ea9e97cbb18de91f3063b0.png" /> son los elementos de la base dual,
+<img src="ltximg/2021-05-29-campolocal_d48ee67dcc50e0a00739c1926c0872a4b61ba8a9.png" alt="2021-05-29-campolocal_d48ee67dcc50e0a00739c1926c0872a4b61ba8a9.png" />. En 2D,
+<img src="ltximg/2021-05-29-campolocal_52fcd57b728f0f179e5210d0f6a60a78a9533090.png" alt="2021-05-29-campolocal_52fcd57b728f0f179e5210d0f6a60a78a9533090.png" /> y
+<img src="ltximg/2021-05-29-campolocal_d239b825d8f5a3f7a5e597e0830452985fda2142.png" alt="2021-05-29-campolocal_d239b825d8f5a3f7a5e597e0830452985fda2142.png" />. En el programa
 uso `$a` y `$b` para denotar la base y `$Ga$ y ~$Gb` para la base
 dual.
 
@@ -368,13 +368,13 @@ dual.
     my $pq=zeroes(2*$pqmax+1,2*$pqmax+1)->ndcoords-$pqmax; #i,p,q
     my $G=$pq->((0),*1)*$Ga+$pq->((1),*1)*$Gb;  #i,p,q
 
-Genera los vectores 3D <img src="ltximg/2021-05-29-campolocal_e60c17485333c40edba243d1f568a7ec0ceb4b7b.png" alt="2021-05-29-campolocal_e60c17485333c40edba243d1f568a7ec0ceb4b7b.png" />.
+Genera los vectores 3D <img src="ltximg/2021-05-29-campolocal_49b0535496702a2ba95c94e6c263113246e108da.png" alt="2021-05-29-campolocal_49b0535496702a2ba95c94e6c263113246e108da.png" />.
 
     # name: reciprocal-decay
     my $G_abs=inner($G, $G)->sqrt; # p,q
     my ($g_p, $g_m)=map {append($G, ($_*i()*$G_abs)->(*1))} (+1,-1); # i,p,q
 
-Con ellos arma los tensores <img src="ltximg/2021-05-29-campolocal_09391bc92c22ef711b335f720de32f8e57851041.png" alt="2021-05-29-campolocal_09391bc92c22ef711b335f720de32f8e57851041.png" />.
+Con ellos arma los tensores <img src="ltximg/2021-05-29-campolocal_e63f15d72c43e1d5c6babd2d33dc1515ba4000bb.png" alt="2021-05-29-campolocal_e63f15d72c43e1d5c6babd2d33dc1515ba4000bb.png" />.
 
     # name: T+-
     # i,j,gx,gy
@@ -382,7 +382,7 @@ Con ellos arma los tensores <img src="ltximg/2021-05-29-campolocal_09391bc92c22e
     		     ($g_p, $g_m); # i,j,p,q
     $_->(:,:,$pqmax,$pqmax).=0 foreach ($T_p, $T_m); # Fix division by 0
 
-Ahora arma las interacciones <img src="ltximg/2021-05-29-campolocal_c0fa0481baa7fd6562d1bdcdce41c3adb54a8186.png" alt="2021-05-29-campolocal_c0fa0481baa7fd6562d1bdcdce41c3adb54a8186.png" /> para <img src="ltximg/2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" alt="2021-05-29-campolocal_58199a5456c6af107f6ae48293c635a1c794b09c.png" /> positiva y negativa.
+Ahora arma las interacciones <img src="ltximg/2021-05-29-campolocal_6b93e966c5d37195f6333284f4552e8567bbacc0.png" alt="2021-05-29-campolocal_6b93e966c5d37195f6333284f4552e8567bbacc0.png" /> para <img src="ltximg/2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" alt="2021-05-29-campolocal_25bc0c5f4dbb55398a510476e8dbed5133220340.png" /> positiva y negativa.
 
     # name: interactions
     my $ns=sequence($dmax)+1; # n
@@ -402,8 +402,8 @@ autointeracción.
     my $T_00 = 4*PI*$density/3*pdl([1,0,0],[0,1,0],[0,0,-2]) -
         $T_n0->mv(-1,0)->sumover - $T_mn0->mv(-1,0)->sumover;
 
-Arma las interacciones <img src="ltximg/2021-05-29-campolocal_ccf8b85359e143162f4a3cd9b5a12d98c49b1cf6.png" alt="2021-05-29-campolocal_ccf8b85359e143162f4a3cd9b5a12d98c49b1cf6.png" /> por bloques para una película
-con <img src="ltximg/2021-05-29-campolocal_c3f4119690053f995a5855a131cc753f5321b79d.png" alt="2021-05-29-campolocal_c3f4119690053f995a5855a131cc753f5321b79d.png" /> planos. `T_all` tiene la interacción <img src="ltximg/2021-05-29-campolocal_ec0deedd52537719709b3abf5919e0056b4b5494.png" alt="2021-05-29-campolocal_ec0deedd52537719709b3abf5919e0056b4b5494.png" /> en el sitio
+Arma las interacciones <img src="ltximg/2021-05-29-campolocal_a0a6326ca65e5eb01efbc13fdc49bfc66cd73e64.png" alt="2021-05-29-campolocal_a0a6326ca65e5eb01efbc13fdc49bfc66cd73e64.png" /> por bloques para una película
+con <img src="ltximg/2021-05-29-campolocal_7402810b6f48472876bc851c11b76b5d9c9a58b8.png" alt="2021-05-29-campolocal_7402810b6f48472876bc851c11b76b5d9c9a58b8.png" /> planos. `T_all` tiene la interacción <img src="ltximg/2021-05-29-campolocal_d7fa01be7fa1586abf0e34d4303b78a9e3f445ee.png" alt="2021-05-29-campolocal_d7fa01be7fa1586abf0e34d4303b78a9e3f445ee.png" /> en el sitio
 `$N2+$n`.
 
     # name: interactions-film
@@ -420,9 +420,9 @@ con <img src="ltximg/2021-05-29-campolocal_c3f4119690053f995a5855a131cc753f5321b
     }
 
 Arma las interacciones faltantes para la misma película. Estas son
-<img src="ltximg/2021-05-29-campolocal_5f769a67b8337032e1beae92b101ace06c44667e.png" alt="2021-05-29-campolocal_5f769a67b8337032e1beae92b101ace06c44667e.png" /> para <img src="ltximg/2021-05-29-campolocal_8855477fe2b44285bd474a3879ca21c992ab70c7.png" alt="2021-05-29-campolocal_8855477fe2b44285bd474a3879ca21c992ab70c7.png" /> menor a cero o <img src="ltximg/2021-05-29-campolocal_8855477fe2b44285bd474a3879ca21c992ab70c7.png" alt="2021-05-29-campolocal_8855477fe2b44285bd474a3879ca21c992ab70c7.png" /> mayor al ancho de la
-película. Entonces, para los sitios <img src="ltximg/2021-05-29-campolocal_d41cce6e3488a04ffa2a9296fcf63634c1c143ba.png" alt="2021-05-29-campolocal_d41cce6e3488a04ffa2a9296fcf63634c1c143ba.png" />, <img src="ltximg/2021-05-29-campolocal_6041f74ea3c59c81eef71b47b696301daff9eebc.png" alt="2021-05-29-campolocal_6041f74ea3c59c81eef71b47b696301daff9eebc.png" /> y
-para los sitios <img src="ltximg/2021-05-29-campolocal_4a544aa9363ad3f095200e6a3f9d91241250ac6d.png" alt="2021-05-29-campolocal_4a544aa9363ad3f095200e6a3f9d91241250ac6d.png" />, <img src="ltximg/2021-05-29-campolocal_b00f14c72846ed2f42703ed0707d876669fc5b84.png" alt="2021-05-29-campolocal_b00f14c72846ed2f42703ed0707d876669fc5b84.png" />, correspondientes a
+<img src="ltximg/2021-05-29-campolocal_fbc55bbd625d5e6e6a4939e86ca1dc30d736b0f2.png" alt="2021-05-29-campolocal_fbc55bbd625d5e6e6a4939e86ca1dc30d736b0f2.png" /> para <img src="ltximg/2021-05-29-campolocal_db8171ab229270b097d56ebd557b3f3faf4f2724.png" alt="2021-05-29-campolocal_db8171ab229270b097d56ebd557b3f3faf4f2724.png" /> menor a cero o <img src="ltximg/2021-05-29-campolocal_db8171ab229270b097d56ebd557b3f3faf4f2724.png" alt="2021-05-29-campolocal_db8171ab229270b097d56ebd557b3f3faf4f2724.png" /> mayor al ancho de la
+película. Entonces, para los sitios <img src="ltximg/2021-05-29-campolocal_af1ba3fee9cfd7492c332193a53122760de1a917.png" alt="2021-05-29-campolocal_af1ba3fee9cfd7492c332193a53122760de1a917.png" />, <img src="ltximg/2021-05-29-campolocal_5bae3b05138450bffff94796ab739eec0a083daa.png" alt="2021-05-29-campolocal_5bae3b05138450bffff94796ab739eec0a083daa.png" /> y
+para los sitios <img src="ltximg/2021-05-29-campolocal_5b90cbabc3962ac927fca2c0f57b5f7908d32e4e.png" alt="2021-05-29-campolocal_5b90cbabc3962ac927fca2c0f57b5f7908d32e4e.png" />, <img src="ltximg/2021-05-29-campolocal_11f6b7176f50ab9bf7abd45815dd63445abd8426.png" alt="2021-05-29-campolocal_11f6b7176f50ab9bf7abd45815dd63445abd8426.png" />, correspondientes a
 los rangos `$N2+$n1+1:2*$N2` y `0:$n` de `$T_all`.
 
     # name: missing
@@ -456,9 +456,9 @@ reporta las interacciones para una película.
     say "Missing terms due to surface";
     say "$dir[$_]: ", trunc $digits,$M_n->(($_),($_)) for (0..2);
 
-Podemos correrlo como a continuación para la superficie <img src="ltximg/2021-05-29-campolocal_c162e63ae0c9857ff94bff3b1c6ed7b003976c83.png" alt="2021-05-29-campolocal_c162e63ae0c9857ff94bff3b1c6ed7b003976c83.png" /> de
-una red cúbica <img src="ltximg/2021-05-29-campolocal_6d2f2452b6b0c9fbf736df4a2202961865277da8.png" alt="2021-05-29-campolocal_6d2f2452b6b0c9fbf736df4a2202961865277da8.png" /> <img src="ltximg/2021-05-29-campolocal_d7f4549512946843b8b14078e293ac807ac5b603.png" alt="2021-05-29-campolocal_d7f4549512946843b8b14078e293ac807ac5b603.png" />, <img src="ltximg/2021-05-29-campolocal_8d2188a28131a0218b0c142da84f2afe9a3e9f80.png" alt="2021-05-29-campolocal_8d2188a28131a0218b0c142da84f2afe9a3e9f80.png" />, truncando
-la red recíproca en <img src="ltximg/2021-05-29-campolocal_c3c17d7640627bd2d39a2b8d4a75777d856bb963.png" alt="2021-05-29-campolocal_c3c17d7640627bd2d39a2b8d4a75777d856bb963.png" />, permitiendo interacciones con
+Podemos correrlo como a continuación para la superficie <img src="ltximg/2021-05-29-campolocal_96de9f4a71e27ad8d36c81f68d00dc27810a57c6.png" alt="2021-05-29-campolocal_96de9f4a71e27ad8d36c81f68d00dc27810a57c6.png" /> de
+una red cúbica <img src="ltximg/2021-05-29-campolocal_8157a3568d1424b8995be3036f4466bbaa77a619.png" alt="2021-05-29-campolocal_8157a3568d1424b8995be3036f4466bbaa77a619.png" /> <img src="ltximg/2021-05-29-campolocal_9a656ed868bd8e8eea38eda61367322f7fadda31.png" alt="2021-05-29-campolocal_9a656ed868bd8e8eea38eda61367322f7fadda31.png" />, <img src="ltximg/2021-05-29-campolocal_022a58ac63b5657a3715450c981dda87341b0fce.png" alt="2021-05-29-campolocal_022a58ac63b5657a3715450c981dda87341b0fce.png" />, truncando
+la red recíproca en <img src="ltximg/2021-05-29-campolocal_5e1f266e0d3f4865267e4e7cbf050ed14b4c644b.png" alt="2021-05-29-campolocal_5e1f266e0d3f4865267e4e7cbf050ed14b4c644b.png" />, permitiendo interacciones con
 segundos vecinos y en una película de semiancho 3 (ancho 7):
 
     ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 2 -dmax 2 -N 3 -digits 4
@@ -504,7 +504,7 @@ Resultados:
     yy: [-0.1640  -0.0002  0  0  0  -0.0002  -0.1640]
     zz: [0.3280  0.0005  0  0  0  0.0005  0.3280]
 
-Ahora repito el cálculo pero truncando la red recíproca en <img src="ltximg/2021-05-29-campolocal_776e47fbfbb0a788652f2729d9cb4b703fd52ceb.png" alt="2021-05-29-campolocal_776e47fbfbb0a788652f2729d9cb4b703fd52ceb.png" />,
+Ahora repito el cálculo pero truncando la red recíproca en <img src="ltximg/2021-05-29-campolocal_d0a68357c737270eaada8645f38ac23edf20dd09.png" alt="2021-05-29-campolocal_d0a68357c737270eaada8645f38ac23edf20dd09.png" />,
 
     ./interactions.pl -a 1,0 -b 0,1 -c 0,0,1 -pqmax 3 -dmax 3 -N 3 -digits 4
 
@@ -608,15 +608,15 @@ poder dar una respuesta dieléctrica y elegir una orientación.
     $epsilon=[split ',', $epsilon];
     $epsilon=$epsilon->[0]+i()*$epsilon->[1];
 
-Dado un campo externo normalizado <img src="ltximg/2021-05-29-campolocal_90b8a0be4f8ca4e4b9d44ef4428295f150c3b47b.png" alt="2021-05-29-campolocal_90b8a0be4f8ca4e4b9d44ef4428295f150c3b47b.png" />, podemos obtener la polarización de
-bulto <img src="ltximg/2021-05-29-campolocal_e23739c5facc027eade581f1bef4088f7cd35ba2.png" alt="2021-05-29-campolocal_e23739c5facc027eade581f1bef4088f7cd35ba2.png" /> y el dipolo de bulto <img src="ltximg/2021-05-29-campolocal_1addb66d77e970b73764791d293ba804f49617c7.png" alt="2021-05-29-campolocal_1addb66d77e970b73764791d293ba804f49617c7.png" />.
+Dado un campo externo normalizado <img src="ltximg/2021-05-29-campolocal_a6584c4d86483622c7956613a9dab3f8d679c04d.png" alt="2021-05-29-campolocal_a6584c4d86483622c7956613a9dab3f8d679c04d.png" />, podemos obtener la polarización de
+bulto <img src="ltximg/2021-05-29-campolocal_77491bcf9bc2718f8ae141c192198a30362b4e58.png" alt="2021-05-29-campolocal_77491bcf9bc2718f8ae141c192198a30362b4e58.png" /> y el dipolo de bulto <img src="ltximg/2021-05-29-campolocal_ef6f095306f32e69b82432254d44392c87f2b8c6.png" alt="2021-05-29-campolocal_ef6f095306f32e69b82432254d44392c87f2b8c6.png" />.
 
     # name: pB
     my $PB=$dir_i==2?(1-1/$epsilon)/(4*PI):($epsilon-1)/(4*PI);
     my $pB=$PB/$density; # dipole moment
 
-Usando Claussius Mossoti <img src="ltximg/2021-05-29-campolocal_fac252c9ea8aa1fcadc815fdf26d978924c51d60.png" alt="2021-05-29-campolocal_fac252c9ea8aa1fcadc815fdf26d978924c51d60.png" />
-también podemos obtener la polarizabilidad <img src="ltximg/2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" alt="2021-05-29-campolocal_f06f20dee81ab8248628631211abcbe3c7ee9a80.png" />,
+Usando Claussius Mossoti <img src="ltximg/2021-05-29-campolocal_46038841cebc16af5ee182e24bebfee43bbadb03.png" alt="2021-05-29-campolocal_46038841cebc16af5ee182e24bebfee43bbadb03.png" />
+también podemos obtener la polarizabilidad <img src="ltximg/2021-05-29-campolocal_e2c293158c3637fe6f8e64df392e83613506a535.png" alt="2021-05-29-campolocal_e2c293158c3637fe6f8e64df392e83613506a535.png" />,
 
     # name: alpha
     my $alpha=3/(4*PI*$density)*($epsilon-1)/($epsilon+2);
@@ -626,7 +626,7 @@ La ecuación a resolver es
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_700610c1cd5c0789450f666d55eaeaa908deb63c.png" alt="2021-05-29-campolocal_700610c1cd5c0789450f666d55eaeaa908deb63c.png" />
+<img src="ltximg/2021-05-29-campolocal_4727ef72b91361646cc0d53ad85643d535959604.png" alt="2021-05-29-campolocal_4727ef72b91361646cc0d53ad85643d535959604.png" />
 </span>
 <span class="equation-label">
 17
@@ -638,7 +638,7 @@ La ecuación en el bulto es
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_fe1b7c231673297cccce9206154197c15baba6b5.png" alt="2021-05-29-campolocal_fe1b7c231673297cccce9206154197c15baba6b5.png" />
+<img src="ltximg/2021-05-29-campolocal_9dcf9659a891eb480022626119a3a83acdec660b.png" alt="2021-05-29-campolocal_9dcf9659a891eb480022626119a3a83acdec660b.png" />
 </span>
 <span class="equation-label">
 18
@@ -650,7 +650,7 @@ Restando,
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_b1d42c81ee7003c3689744a8bea62719297f57cb.png" alt="2021-05-29-campolocal_b1d42c81ee7003c3689744a8bea62719297f57cb.png" />
+<img src="ltximg/2021-05-29-campolocal_f88d277876e7290f3b55e62428c73c377a6af055.png" alt="2021-05-29-campolocal_f88d277876e7290f3b55e62428c73c377a6af055.png" />
 </span>
 <span class="equation-label">
 19
@@ -662,14 +662,14 @@ que reescribimos como
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_0fadeaed90d83a71672de42eeaf174427b046ce5.png" alt="2021-05-29-campolocal_0fadeaed90d83a71672de42eeaf174427b046ce5.png" />
+<img src="ltximg/2021-05-29-campolocal_c38a533db78d4d580d6fcd7c0efda2dc4d7d84f0.png" alt="2021-05-29-campolocal_c38a533db78d4d580d6fcd7c0efda2dc4d7d84f0.png" />
 </span>
 <span class="equation-label">
 20
 </span>
 </div>
 
-donde <img src="ltximg/2021-05-29-campolocal_4d69e3c7fc7aadedec0c9c7c5e85b46ac2e04794.png" alt="2021-05-29-campolocal_4d69e3c7fc7aadedec0c9c7c5e85b46ac2e04794.png" /> es el tensor identidad y <img src="ltximg/2021-05-29-campolocal_0597d6bc8b8c89513b81b211b51655da1aebfb48.png" alt="2021-05-29-campolocal_0597d6bc8b8c89513b81b211b51655da1aebfb48.png" /> es la suma de las interacciones con
+donde <img src="ltximg/2021-05-29-campolocal_6ae46d6293395257e74b1c1f81c90c04e6fda2c7.png" alt="2021-05-29-campolocal_6ae46d6293395257e74b1c1f81c90c04e6fda2c7.png" /> es el tensor identidad y <img src="ltximg/2021-05-29-campolocal_8f3844e20a98c142748ae213ab4bc5a357433cd1.png" alt="2021-05-29-campolocal_8f3844e20a98c142748ae213ab4bc5a357433cd1.png" /> es la suma de las interacciones con
 los planos ausentes.
 
 Construimos entonces rutinas para resolver sistemas lineales de
@@ -748,7 +748,7 @@ Resultados:
 
 Podemos simular un sistema semiinfinito como una película finita,
 suficientemente ancha y eliminando el término que fuerza al sistema
-por uno de los lados, i.e. redefiniendo las <img src="ltximg/2021-05-29-campolocal_bc9e44f15f9feac91c07f92e4f4ddeae69ba824b.png" alt="2021-05-29-campolocal_bc9e44f15f9feac91c07f92e4f4ddeae69ba824b.png" />'s. Para ello,
+por uno de los lados, i.e. redefiniendo las <img src="ltximg/2021-05-29-campolocal_ff3d5a4e427e0c838562ac7a819d46c02b2c18ec.png" alt="2021-05-29-campolocal_ff3d5a4e427e0c838562ac7a819d46c02b2c18ec.png" />'s. Para ello,
 modificamos el bloque `missing`.
 
     # name: missing1
@@ -800,7 +800,7 @@ Resultados:
      3.5181e-15+4.6669e-15i  6.8655e-17-3.7276e-17i  -3.5698e-19-9.8135e-19i
      -1.3679e-20+2.7779e-21i  9.6595e-24+1.8636e-22i]
 
-Comparando con los resultados de la sección anterior vemos que <img src="ltximg/2021-05-29-campolocal_799cd15f1656e0fd43a0dccbc73db4a4c04536f4.png" alt="2021-05-29-campolocal_799cd15f1656e0fd43a0dccbc73db4a4c04536f4.png" /> es esencialmente idéntica al caso anterior cerca de la superficie
+Comparando con los resultados de la sección anterior vemos que <img src="ltximg/2021-05-29-campolocal_386a6ea79d8a005b03a2a3e6b7e35ee1a927d0c9.png" alt="2021-05-29-campolocal_386a6ea79d8a005b03a2a3e6b7e35ee1a927d0c9.png" /> es esencialmente idéntica al caso anterior cerca de la superficie
 mientras que ahora se hace prácticamente cero en el otro extremo.
 
 
@@ -812,7 +812,7 @@ integrarla sobre la coordenada normal para obtener la corriente superficial
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_3335b75cdc8504ce4a02a8ea1b75099e00d5de8f.png" alt="2021-05-29-campolocal_3335b75cdc8504ce4a02a8ea1b75099e00d5de8f.png" />
+<img src="ltximg/2021-05-29-campolocal_6dccbee6de6847f3e633f815b7669e056ddd42f7.png" alt="2021-05-29-campolocal_6dccbee6de6847f3e633f815b7669e056ddd42f7.png" />
 </span>
 <span class="equation-label">
 21
@@ -824,24 +824,24 @@ De aquí podemos identificar las conductividades superficiales,
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_322c5a77ff60691a769d70888ab3b52712b25941.png" alt="2021-05-29-campolocal_322c5a77ff60691a769d70888ab3b52712b25941.png" />
+<img src="ltximg/2021-05-29-campolocal_4ec06f4803abe8be0e4e26fd8a83a3d39a7a2b87.png" alt="2021-05-29-campolocal_4ec06f4803abe8be0e4e26fd8a83a3d39a7a2b87.png" />
 </span>
 <span class="equation-label">
 22
 </span>
 </div>
 
-donde <img src="ltximg/2021-05-29-campolocal_e3e2119223514d0d4138267860fe21ec674b7336.png" alt="2021-05-29-campolocal_e3e2119223514d0d4138267860fe21ec674b7336.png" /> es el área de la celda unitaria 2D, supusimos que <img src="ltximg/2021-05-29-campolocal_3773bfa0a05421f0f67e6c4791a370dbe60310e2.png" alt="2021-05-29-campolocal_3773bfa0a05421f0f67e6c4791a370dbe60310e2.png" />, <img src="ltximg/2021-05-29-campolocal_f4b063b0f80936b36f97c50c99cf1c25baca9522.png" alt="2021-05-29-campolocal_f4b063b0f80936b36f97c50c99cf1c25baca9522.png" />,
-y <img src="ltximg/2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" alt="2021-05-29-campolocal_87596482ce53325ca7d4bd470c6fbdc163cfb5a7.png" /> son direcciones principales y que
-usamos campos normalizados <img src="ltximg/2021-05-29-campolocal_dff68935dd7e9b7d6e39f2f30ae20e9722dd3c20.png" alt="2021-05-29-campolocal_dff68935dd7e9b7d6e39f2f30ae20e9722dd3c20.png" /> al calcular <img src="ltximg/2021-05-29-campolocal_fa2a79987f9a91227a256913eec3a47b1286cfc6.png" alt="2021-05-29-campolocal_fa2a79987f9a91227a256913eec3a47b1286cfc6.png" />, <img src="ltximg/2021-05-29-campolocal_30d30c5245f75068c1a3a860668cb991e8e0e2f3.png" alt="2021-05-29-campolocal_30d30c5245f75068c1a3a860668cb991e8e0e2f3.png" /> y <img src="ltximg/2021-05-29-campolocal_4c7eb214ae3332e786abd258b68044a0088542cb.png" alt="2021-05-29-campolocal_4c7eb214ae3332e786abd258b68044a0088542cb.png" /> al
-calcular <img src="ltximg/2021-05-29-campolocal_71e297507b17ef187af348399ff6cfe05af96bc4.png" alt="2021-05-29-campolocal_71e297507b17ef187af348399ff6cfe05af96bc4.png" />.
+donde <img src="ltximg/2021-05-29-campolocal_4ebe49d4e7859f1e4377b796dcde4769fa88b7d9.png" alt="2021-05-29-campolocal_4ebe49d4e7859f1e4377b796dcde4769fa88b7d9.png" /> es el área de la celda unitaria 2D, supusimos que <img src="ltximg/2021-05-29-campolocal_df31d015047b8f295bdd4852749fef2fa6e6b463.png" alt="2021-05-29-campolocal_df31d015047b8f295bdd4852749fef2fa6e6b463.png" />, <img src="ltximg/2021-05-29-campolocal_407c076cb2de6eb8dc1357b587952b56238f7c50.png" alt="2021-05-29-campolocal_407c076cb2de6eb8dc1357b587952b56238f7c50.png" />,
+y <img src="ltximg/2021-05-29-campolocal_3612876dfbe476ef94d2b3f426edd001d067800b.png" alt="2021-05-29-campolocal_3612876dfbe476ef94d2b3f426edd001d067800b.png" /> son direcciones principales y que
+usamos campos normalizados <img src="ltximg/2021-05-29-campolocal_fea927cb84acbfa17e7185427e85c2dcdc5ac1d4.png" alt="2021-05-29-campolocal_fea927cb84acbfa17e7185427e85c2dcdc5ac1d4.png" /> al calcular <img src="ltximg/2021-05-29-campolocal_f4a6244f44969535cb91145b97dc163489085f97.png" alt="2021-05-29-campolocal_f4a6244f44969535cb91145b97dc163489085f97.png" />, <img src="ltximg/2021-05-29-campolocal_d0b15f4dff5bb9664b81be6bb16a99140ecf35b5.png" alt="2021-05-29-campolocal_d0b15f4dff5bb9664b81be6bb16a99140ecf35b5.png" /> y <img src="ltximg/2021-05-29-campolocal_e953f7d8bdb16ab9a11936a4d6ae075ec8861098.png" alt="2021-05-29-campolocal_e953f7d8bdb16ab9a11936a4d6ae075ec8861098.png" /> al
+calcular <img src="ltximg/2021-05-29-campolocal_e58c4156ea30dd82328bf8bbe6c21d621474cfb0.png" alt="2021-05-29-campolocal_e58c4156ea30dd82328bf8bbe6c21d621474cfb0.png" />.
 
 Con estas funciones respuesta puedo calcular la impedancia superficial
 
 
 <div class="equation-container">
 <span class="equation">
-<img src="ltximg/2021-05-29-campolocal_f64aece58acbb4b244f4839e6a0d039540da472e.png" alt="2021-05-29-campolocal_f64aece58acbb4b244f4839e6a0d039540da472e.png" />
+<img src="ltximg/2021-05-29-campolocal_da03853f9fa53bed9d43e450749cd3c64accd86e.png" alt="2021-05-29-campolocal_da03853f9fa53bed9d43e450749cd3c64accd86e.png" />
 </span>
 <span class="equation-label">
 23
@@ -852,19 +852,19 @@ donde elegimos las componentes apropiadas de acuerdo a la polarización
 y a la orientación del plano de incidencia.
 
 Por motivos prácticos tenemos que enfrentar ahora el problema de las
-unidades. En general, <img src="ltximg/2021-05-29-campolocal_8237629ff8785539d95b194f27238b933fd653b7.png" alt="2021-05-29-campolocal_8237629ff8785539d95b194f27238b933fd653b7.png" />, <img src="ltximg/2021-05-29-campolocal_957098270886006faff7713e120e0879830fd5d8.png" alt="2021-05-29-campolocal_957098270886006faff7713e120e0879830fd5d8.png" />, por
-lo que <img src="ltximg/2021-05-29-campolocal_7a7e697407ae91cca245459b75981a223e084306.png" alt="2021-05-29-campolocal_7a7e697407ae91cca245459b75981a223e084306.png" /> y los cocientes <img src="ltximg/2021-05-29-campolocal_bc902c0e08d4f39a61f6c95eed8a3cc6d650ac4a.png" alt="2021-05-29-campolocal_bc902c0e08d4f39a61f6c95eed8a3cc6d650ac4a.png" /> y <img src="ltximg/2021-05-29-campolocal_55cf24c82d8a48bf9146cdb50fed8dd3a082c55a.png" alt="2021-05-29-campolocal_55cf24c82d8a48bf9146cdb50fed8dd3a082c55a.png" /> son adimensionales. Al normalizar los campos a 1 y desproveerlos de unidades,
+unidades. En general, <img src="ltximg/2021-05-29-campolocal_1b10df782ac24208c789209d1629618b22e522f6.png" alt="2021-05-29-campolocal_1b10df782ac24208c789209d1629618b22e522f6.png" />, <img src="ltximg/2021-05-29-campolocal_8d27279e6f8b4f92eb4d6cdc270d1c2cc05e3d39.png" alt="2021-05-29-campolocal_8d27279e6f8b4f92eb4d6cdc270d1c2cc05e3d39.png" />, por
+lo que <img src="ltximg/2021-05-29-campolocal_73c6e94d8ad74c122b83f58a152721b4eb27e86a.png" alt="2021-05-29-campolocal_73c6e94d8ad74c122b83f58a152721b4eb27e86a.png" /> y los cocientes <img src="ltximg/2021-05-29-campolocal_a9b1f538ff4929aea0153e0d5fb48cbab36124ab.png" alt="2021-05-29-campolocal_a9b1f538ff4929aea0153e0d5fb48cbab36124ab.png" /> y <img src="ltximg/2021-05-29-campolocal_8b3f6d3174e8fc7eef94ec34692bb0c9bd761da0.png" alt="2021-05-29-campolocal_8b3f6d3174e8fc7eef94ec34692bb0c9bd761da0.png" /> son adimensionales. Al normalizar los campos a 1 y desproveerlos de unidades,
 los dipolos calculados arriba tendrían unidades de volumen en lugar de
 carga por distancia, puesto que la polarizabilidad tiene unidades de
-volumen. Al dividirlos entre <img src="ltximg/2021-05-29-campolocal_e3e2119223514d0d4138267860fe21ec674b7336.png" alt="2021-05-29-campolocal_e3e2119223514d0d4138267860fe21ec674b7336.png" /> adquirirían unidades de distancia y
-al multiplicarlos por <img src="ltximg/2021-05-29-campolocal_47665ddaf780ff3b93724a9966a2b5d6446e4b29.png" alt="2021-05-29-campolocal_47665ddaf780ff3b93724a9966a2b5d6446e4b29.png" /> llegaríamos a las esperadas unidades de
+volumen. Al dividirlos entre <img src="ltximg/2021-05-29-campolocal_4ebe49d4e7859f1e4377b796dcde4769fa88b7d9.png" alt="2021-05-29-campolocal_4ebe49d4e7859f1e4377b796dcde4769fa88b7d9.png" /> adquirirían unidades de distancia y
+al multiplicarlos por <img src="ltximg/2021-05-29-campolocal_817023e3b92e52d3364235a645ce224e05214ded.png" alt="2021-05-29-campolocal_817023e3b92e52d3364235a645ce224e05214ded.png" /> llegaríamos a las esperadas unidades de
 velocidad. Es común expresar la frecuencia en términos de la energía
-<img src="ltximg/2021-05-29-campolocal_e0a3e7f12bfd0e1e3fd3153a804368fcb3c5f432.png" alt="2021-05-29-campolocal_e0a3e7f12bfd0e1e3fd3153a804368fcb3c5f432.png" /> en unidades de <img src="ltximg/2021-05-29-campolocal_29a649f7983cf2f1e7174d800a2246ef93821b3a.png" alt="2021-05-29-campolocal_29a649f7983cf2f1e7174d800a2246ef93821b3a.png" />. Por otro lado, es cómodo expresar
-los vectores de la base cristalina <img src="ltximg/2021-05-29-campolocal_18db92b491aa38a76845ef1a8d75ec424e2ebac8.png" alt="2021-05-29-campolocal_18db92b491aa38a76845ef1a8d75ec424e2ebac8.png" />, <img src="ltximg/2021-05-29-campolocal_2232f20fda36a594bf6244c3a1a10bf98dfed070.png" alt="2021-05-29-campolocal_2232f20fda36a594bf6244c3a1a10bf98dfed070.png" /> y <img src="ltximg/2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" alt="2021-05-29-campolocal_431928413284600f006cc291fd3f4f67472baf33.png" /> en
+<img src="ltximg/2021-05-29-campolocal_b19d3e7bf1c3d143745a472e7278d5035cba94b3.png" alt="2021-05-29-campolocal_b19d3e7bf1c3d143745a472e7278d5035cba94b3.png" /> en unidades de <img src="ltximg/2021-05-29-campolocal_15d4b0315859ebdb77229febe9a9617e1fb04b3b.png" alt="2021-05-29-campolocal_15d4b0315859ebdb77229febe9a9617e1fb04b3b.png" />. Por otro lado, es cómodo expresar
+los vectores de la base cristalina <img src="ltximg/2021-05-29-campolocal_45bbfb41e2582051ce882eb9054c5cbd3782465c.png" alt="2021-05-29-campolocal_45bbfb41e2582051ce882eb9054c5cbd3782465c.png" />, <img src="ltximg/2021-05-29-campolocal_d16babec75d9952675f9a08a292932936e899c02.png" alt="2021-05-29-campolocal_d16babec75d9952675f9a08a292932936e899c02.png" /> y <img src="ltximg/2021-05-29-campolocal_f719d5849b622408ce423485031ff0992b2e9dd4.png" alt="2021-05-29-campolocal_f719d5849b622408ce423485031ff0992b2e9dd4.png" /> en
 unidades del parámetro de red del sistema. Entonces, la velocidad de la luz arriba
-<img src="ltximg/2021-05-29-campolocal_aad7fe24284c5c445077020611cba1191ed36604.png" alt="2021-05-29-campolocal_aad7fe24284c5c445077020611cba1191ed36604.png" /> deberíamos expresarla en unidades consistentes, por ejemplo,
-eV <img src="ltximg/2021-05-29-campolocal_01a0e88c6e17d6565bcfc3fa31526e776924c771.png" alt="2021-05-29-campolocal_01a0e88c6e17d6565bcfc3fa31526e776924c771.png" /> parámetro de red. Para ello usamos el factor de conversión
-<img src="ltximg/2021-05-29-campolocal_7ed0958be07c5d3d5a786ae8708792a78990f88d.png" alt="2021-05-29-campolocal_7ed0958be07c5d3d5a786ae8708792a78990f88d.png" /> e leemos el parámetro de red en
+<img src="ltximg/2021-05-29-campolocal_5ab8203e7ca7262a895a80fd6729292ac053c39e.png" alt="2021-05-29-campolocal_5ab8203e7ca7262a895a80fd6729292ac053c39e.png" /> deberíamos expresarla en unidades consistentes, por ejemplo,
+eV <img src="ltximg/2021-05-29-campolocal_34904c46a49935dc0a4d8ad5c652f831708e37e4.png" alt="2021-05-29-campolocal_34904c46a49935dc0a4d8ad5c652f831708e37e4.png" /> parámetro de red. Para ello usamos el factor de conversión
+<img src="ltximg/2021-05-29-campolocal_d9ac405ecf8bdb82745f6f9d3e33a112ece143e7.png" alt="2021-05-29-campolocal_d9ac405ecf8bdb82745f6f9d3e33a112ece143e7.png" /> e leemos el parámetro de red en
 nanómetros de la línea de comandos.
 
 Modificamos entonces una vez más nuestra lista de parámetros,
@@ -970,9 +970,9 @@ Resultados:
 
 Tenemos ya prácticamente todas las herramientas para calcular los
 cambios en la reflectancia. Para ello, en lugar de leer un valor de
-<img src="ltximg/2021-05-29-campolocal_864c1b06476ce85912aae4acfd7a12387ec732ce.png" alt="2021-05-29-campolocal_864c1b06476ce85912aae4acfd7a12387ec732ce.png" /> desde la línea de comandos, leeremos el nombre de un
-archivo con una tabla de valores de frecuencia, <img src="ltximg/2021-05-29-campolocal_e2954ff64cd56284c636605f81662d6bfaa549f2.png" alt="2021-05-29-campolocal_e2954ff64cd56284c636605f81662d6bfaa549f2.png" /> y
-<img src="ltximg/2021-05-29-campolocal_8f97d65305fce68d9848ae098d84cd1dc04f44c0.png" alt="2021-05-29-campolocal_8f97d65305fce68d9848ae098d84cd1dc04f44c0.png" /> para, y para cada valor obtendremos la impedancia
+<img src="ltximg/2021-05-29-campolocal_f796ac16360cd5bf4d5dd9df17384cb600e96963.png" alt="2021-05-29-campolocal_f796ac16360cd5bf4d5dd9df17384cb600e96963.png" /> desde la línea de comandos, leeremos el nombre de un
+archivo con una tabla de valores de frecuencia, <img src="ltximg/2021-05-29-campolocal_4938810586faf94d0f90fc198d4e7f24690b7767.png" alt="2021-05-29-campolocal_4938810586faf94d0f90fc198d4e7f24690b7767.png" /> y
+<img src="ltximg/2021-05-29-campolocal_b1aad222f82d66ddc7bc8cfc7212b03a4ed766e3.png" alt="2021-05-29-campolocal_b1aad222f82d66ddc7bc8cfc7212b03a4ed766e3.png" /> para, y para cada valor obtendremos la impedancia
 superficial, la conductividad superficial y la reflectancia. A la
 lista de parámetros hay que añadir el nombre del archivo, el ángulo
 de incidencia y el nombre del archivo de salida.
@@ -1126,7 +1126,7 @@ Ahora corremos el cálculo para la cara (110) del Si.
 Los resultados quedan en la siguiente gráfica
 ![img](../../../../assets/image/20210529si110.png)
 
-Lo volvemos a correr pero ahora a un ángulo de incidencia <img src="ltximg/2021-05-29-campolocal_5375c223cddd738c43e63b905d4124f6dc0d5427.png" alt="2021-05-29-campolocal_5375c223cddd738c43e63b905d4124f6dc0d5427.png" />.
+Lo volvemos a correr pero ahora a un ángulo de incidencia <img src="ltximg/2021-05-29-campolocal_bc779de61617c0c73175c0356a0bf814f08c227a.png" alt="2021-05-29-campolocal_bc779de61617c0c73175c0356a0bf814f08c227a.png" />.
 
     ./DeltaR.pl -a .7071,0 -b 0,1 -c .3536,.5,.3536 \
          -pqmax 3 -dmax 5 -N 5 -lattice .54 -angle 45 \
@@ -1136,7 +1136,7 @@ Lo volvemos a correr pero ahora a un ángulo de incidencia <img src="ltximg/2021
 ![img](../../../../assets/image/20210529si110-45.png)
 
 Curiosamente, aunque la respuesta normal es la misma para ambas
-polarizaciones, como <img src="ltximg/2021-05-29-campolocal_58942e5c972a07841f4d98ee8b9febaba6413d8a.png" alt="2021-05-29-campolocal_58942e5c972a07841f4d98ee8b9febaba6413d8a.png" /> es menor, la anisotropía relativa es
+polarizaciones, como <img src="ltximg/2021-05-29-campolocal_b49594828da043411bf085b5fb425f746e90b512.png" alt="2021-05-29-campolocal_b49594828da043411bf085b5fb425f746e90b512.png" /> es menor, la anisotropía relativa es
 mayor.
 
 

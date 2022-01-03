@@ -16,7 +16,7 @@ tags:
 Si está leyendo este artículo en la pantalla de una computadora o de
 un teléfono, seguramente está siendo engañado. Si lo está leyendo en
 papel, tal vez también. Si ve el lado izquierdo de la figura
-[2](#org14094f1) creerá ver un cuadro
+[2](#orgf6968f0) creerá ver un cuadro
 amarillo, pero ese cuadro no existe en la pantalla de su
 computadora. Lo que en realidad está viendo son muchos cuadros
 minúsculos rojos y verdes como ilustra el lado derecho de la misma
@@ -40,7 +40,7 @@ través de ella podrá ver amplificados los pequeños *pixeles*
 (elementos de la imagen) de colores rojo, verde y azul, pero no verá
 ningún pixel amarillo, magenta o cian, y tampoco verá un pixel
 blanco. Las limitaciones de nuestro ojo para *ver el verdadero
-color* de las cosas fue discutido en la referencia [1](#org89ff786) que
+color* de las cosas fue discutido en la referencia [1](#orga1eefe9) que
 fue publicada en este mismo espacio.
 
 ![img](/assets/image/20211122olfato/fig1.png "El color amarillo (izquierda) se confunde en el ojo con el color producido por una mezcla de elementos rojos y verdes (derecha) cuando éstos son muy pequeños y están muy juntos.")
@@ -48,14 +48,14 @@ fue publicada en este mismo espacio.
 La vista es un sentido maravilloso y nos permite localizar objetos y
 fuentes luminosa en el espacio con una gran precisión, así como
 detectar los movimientos más pequeños, pero es un sentido fácil de
-engañar. En la referencia [2](#org970bd6f) hay una larga lista de
+engañar. En la referencia [2](#orgbd3c4bc) hay una larga lista de
 ilusiones ópticas sorprendentes.
 
 
 # El sonido
 
 Nuestra percepción del sonido es diferente. Si uno toca en un piano
-la nota *La<sub>4</sub>* con un tono de 440 hertz (fig. [5](#org42e48ae)), una
+la nota *La<sub>4</sub>* con un tono de 440 hertz (fig. [5](#org06131b5)), una
 frecuencia 10<sup>12</sup>
 veces más lenta que la del color rojo, y simultáneamente toca un
 *Do<sub>5</sub>* sostenido, con una frecuencia de 554.5 hertz, aproximadamente
@@ -84,7 +84,7 @@ piano del mismo tono producido por una guitarra, un violín o una flauta, pues d
 los físicos llamamos *el contenido espectral* del sonido, el volumen
 relativo de cada tono puro en la mezcla
 de sonidos que contiene todo sonido (vea las referencias
-[3](#orgcad8f7e) y [4](#org7c33748)). El timbre
+[3](#org282674a) y [4](#org0e6be41)). El timbre
 nos permite distinguir cada uno de los instrumentos de una orquesta
 y analizar las distintas líneas melódicas con que contribuyen a una
 obra sinfónica. También nos permite identificar los fonemas en
@@ -93,7 +93,7 @@ habla. Entre amigos, Ud. puede mantener una conversación con uno de ellos
 aunque todos los demás estén hablando al mismo tiempo. Esto se debe
 a la capacidad de nuestro sistema auditivo de analizar en todo
 tiempo todas las frecuencias que componen todo sonido que entra a
-nuestros oídos. La figura [7](#orgd194d42) muestra un espectrograma
+nuestros oídos. La figura [7](#org6d03a96) muestra un espectrograma
 de un canto de un clarín jilguero *Myadestes occidentalis* recién grabado
 en una barranca al noroeste de Cuernavaca. El
 ave se pudo identificar por la intensidad (codificada en color) de
@@ -121,7 +121,7 @@ podemos saber si nuestra posible pareja es genéticamente
 compatible. Un perro oliendo a su amo puede saber de dónde viene, con
 quién estuvo y cómo se siente; una leona marina puede identificar a su
 cría de entre centenares de cachorros (ver la referencia
-[5](#org704c6a0)). Gracias al olfato podemos identificar químicamente a miles de
+[5](#orge768cf4)). Gracias al olfato podemos identificar químicamente a miles de
 moléculas distintas que forman sustancias volátiles, *odorantes*, que
 entran en contacto con
 el *epitelio olfativo* en el techo de nuestra cavidad nasal.
@@ -141,14 +141,14 @@ lleva a preguntar, ¿cómo funciona el olfato? Curiosamente, esta es
 una pregunta muy poco estudiada. Su analogía con el oído nos sugiere
 que quizás el olfato esté basado en el análisis de frecuencias de
 vibración, como el sonido; el olfato podría funcionar mediante el
-*análisis espectral* (ver fig. [7](#orgd194d42)) de las
+*análisis espectral* (ver fig. [7](#org6d03a96)) de las
 vibraciones de todas las moléculas que entran a nuestra nariz. Esta
 hipótesis contrasta fuertemente con la mayoría de las teorías de la
 percepción, basadas en general en el reconocimiento de la *forma*
 tridimensional de
 las moléculas: las moléculas son como llaves y los receptores como
 cerraduras que se activan sólo cuando embonan con la llave adecuada
-(ver fig. [10](#orgfba4bfc)).
+(ver fig. [10](#org82eece0)).
 
 ![img](/assets/image/20211122olfato/fig4.png "Modelo esquemático de llave cerradura. Los receptores (*molécula verde*) son como cerraduras en cuyos *sitios activos* sólo pueden embonar llaves (*moléculas rojas*) con cierta forma. Cuando se une una llave a su correspondiente cerradura se forma un *complejo* (*molécula amarilla*).")
 
@@ -179,7 +179,7 @@ escuchar frecuencias tan altas.
 La pregunta es, ¿cómo podrían detectarse frecuencias de oscilación
 tan altas como las que corresponden a vibraciones moleculares? En
 1996, Luca Turin propuso que podría ser mediante *tunelamiento
-cuántico inelástico* (ver ref. [6](#orgb40bb90)). Para entender qué es esto,
+cuántico inelástico* (ver ref. [6](#org6d9dea0)). Para entender qué es esto,
 busque un parque con columpios, encuentre dos columpios contiguos
 desocupados, súbase a uno y comience a mecerse (o pídale a un niño
 que lo haga). Notará que al poco tiempo, el columpio de al lado
@@ -195,16 +195,16 @@ quinto traste) tienen la misma frecuencia de oscilación (en el
 último caso, un La<sub>2</sub> de 110 hertz) y están
 acoplados. La energía impartida a uno de ellos puede transferirse al
 otro y de regreso (una discusión detallada y otros experimentos se
-hallan en la ref. [7](#org188df9d)). Desde el punto de vista cuántico, los
+hallan en la ref. [7](#org4c095aa)). Desde el punto de vista cuántico, los
 electrones se comportan como ondas, por lo cual, si colocamos un
 electrón en una *caja* en que pueda oscilar con cierta frecuencia, y
 colocamos una caja idéntica vacía en su vecindad, el electrón podría
-desaparecer de una y aparecer en la otra (ver fig. [13](#org2411bd3)), así como la energía de
+desaparecer de una y aparecer en la otra (ver fig. [13](#orgd8e8d4b)), así como la energía de
 vibración de una cuerda puede pasar a otra cuerda cercana si ambas
 están entonadas a la misma frecuencia. Este fenómeno se
 conoce como *tunelamiento cuántico*, y es uno de los muchos
 misterios cuánticos (para otros, vea la
-ref. [8](#org2f213bd)). La frecuencia con que oscila la *función de
+ref. [8](#org1ec8f24)). La frecuencia con que oscila la *función de
 onda electrónica* es proporcional a la energía del
 electrón. Curiosamente, el electrón puede pasar de una caja a la otra
 aunque no tenga suficiente energía para salir de la primera, como si
@@ -236,7 +236,7 @@ una energía inicial *E<sub>i</sub>*, tunelear hacia otra región en que tendrí
 energía final *E<sub>f</sub>* más pequeña, regalándole la diferencia de
 energía *ΔE=E<sub>i</sub>-E<sub>f</sub>* a la molécula intermediaria, la cual quedaría
 vibrando con una frecuencia *ν=ΔE/ℎ*, donde *ℎ* es la *constante de
-Planck*, como muestra la fig. [15](#org136cf1a). El paso de electrones de
+Planck*, como muestra la fig. [15](#org99b1108). El paso de electrones de
 uno a otro lado indicaría entonces la presencia de una molécula específica.
 
 ![img](/assets/image/20211122olfato/fig6.png "Propuesta esquemática de receptor olfativo. Un electrón llega (flecha negra) a un extremo de un receptor (*caja* izquierda) donde tiene una energía relativamente alta, y queda atrapado a menos que excite (flecha a trazos) a una molécula cercana (abajo) cuyas vibraciones absorban justo la energía que pierda el electrón al pasar al otro extremo (*caja* derecha) de donde puede ser extraido.")
@@ -270,7 +270,7 @@ enantiómeros huelen distinto, pero otros muestran que
 no. Probablemente, la respuesta final será
 que tanto la forma como el espectro vibracional juegan cierto papel
 en la percepción. Para seguir la discusión, vea las referencias
-[9](#orgaef5e52), [10](#org8267cd3) y [11](#org7e982e4).
+[9](#orgd3ecf31), [10](#org84250cc) y [11](#org7cd38a0).
 
 
 # Conclusiones
@@ -302,36 +302,36 @@ IN111119.
 
 # Referencias
 
-1.  <a id="org89ff786"></a> *Daltónico*, W. Luis Mochán, diario *La Unión de Morelos*,
+1.  <a id="orga1eefe9"></a> *Daltónico*, W. Luis Mochán, diario *La Unión de Morelos*,
     3 de octubre de 2011, pags. 28,29.
     <http://bit.ly/pe3MC8>
-2.  <a id="org970bd6f"></a> Michael Bach, *Optical illusions & visual
+2.  <a id="orgbd3c4bc"></a> Michael Bach, *Optical illusions & visual
     phenomena*,
     <https://bit.ly/3p9alg9>
-3.  <a id="orgcad8f7e"></a> *Usted es Desafinado (parte 1 de 2)*,  W. Luis Mochán,
+3.  <a id="org282674a"></a> *Usted es Desafinado (parte 1 de 2)*,  W. Luis Mochán,
     diario *La Unión de Morelos*,
     5 de septiembre de 2011, pag. 31. <https://bit.ly/3lSi940>
-4.  <a id="org7c33748"></a> *Usted es Desafinado (parte 2 de 2)*, W. Luis Mochán,
+4.  <a id="org0e6be41"></a> *Usted es Desafinado (parte 2 de 2)*, W. Luis Mochán,
      diario *La Unión de Morelos*,
     12 de septiembre de 2011, pags. 33 y 13 de septiembre de 2011,
     pags. 22 y 23. <https://bit.ly/3DQTZwW>
-5.  <a id="org704c6a0"></a> Dra Mara Alaide Guzmán Ruiz, *El sistema olfativo: ¿para qué
+5.  <a id="orge768cf4"></a> Dra Mara Alaide Guzmán Ruiz, *El sistema olfativo: ¿para qué
     sirve y cómo funciona?*, <https://bit.ly/2Z4R19n>
-6.  <a id="orgb40bb90"></a> Turin, Luca. 1996. *A Spectroscopic Mechanism for Primary
+6.  <a id="org6d9dea0"></a> Turin, Luca. 1996. *A Spectroscopic Mechanism for Primary
     Olfactory Reception.*
     Chemical Senses 21 (6): 773–91. <https://bit.ly/3DXbko7>
-7.  <a id="org188df9d"></a>  W. Luis Mochán, *Magia resonante*, diario
+7.  <a id="org4c095aa"></a>  W. Luis Mochán, *Magia resonante*, diario
     *La Unión de Morelos*, 13 de noviembre de 2017, pgs. 30 y 31.
     <http://bit.ly/2jqSRwa>
-8.  <a id="org2f213bd"></a> *Entrelazados*, W. Luis Mochán, diario
+8.  <a id="org1ec8f24"></a> *Entrelazados*, W. Luis Mochán, diario
     *La Unión de Morelos*,
      2021-06-07 p. 16-17. <https://bit.ly/3DSNbPr>
-9.  <a id="orgaef5e52"></a>   Johnjoe McFadden and Jim Al-Khalili, *A quantum sense of smell*,
+9.  <a id="orgd3ecf31"></a>   Johnjoe McFadden and Jim Al-Khalili, *A quantum sense of smell*,
     Physics Today (podcast), marzo, 2015. <https://bit.ly/3lMnqKu>
-10. <a id="org8267cd3"></a> Maria Isabel Franco, Luca Turin, Andreas Mershin, and
+10. <a id="org84250cc"></a> Maria Isabel Franco, Luca Turin, Andreas Mershin, and
     Efthimios M. C. Skoulakis, *Molecular vibration-sensing  component in Drosophila
     melanogaster olfaction*, PNAS, <https://bit.ly/3BXlRPC>
-11. <a id="org7e982e4"></a> Eric Block et. al, *Implausibility of the
+11. <a id="org7cd38a0"></a> Eric Block et. al, *Implausibility of the
     vibrational theory of olfaction*, PNAS 2015 112 E2766-E2774, <https://bit.ly/3aIa8s6>.
 
 
