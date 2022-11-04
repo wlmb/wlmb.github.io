@@ -13,4 +13,6 @@ The list of all entries is [here](/all/). The list of all tags is [here](/tags/)
 
 ### Contact me
 
-[mochan@fis.unam.mx](mailto:mochan@fis.unam.mx)
+* [mochan@fis.unam.mx](mailto:mochan@fis.unam.mx)
+* [old web page](http://em.fis.unam.mx/public/mochan)
+* [mastodon](https://mstdn.social/@wlmb)
