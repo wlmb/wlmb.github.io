@@ -103,4 +103,3 @@ Stream, also dry.
 Path up from the stream
 
 ![img](../../../../assets/image/20240330Bicla/1711896206199.jpg "Path up from the stream")
-
