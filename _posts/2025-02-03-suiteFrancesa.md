@@ -12,5 +12,7 @@ tags:
 Hice una [transcripción](../../../../assets/pdf/20250203/suiteFrancesaIV.pdf) para guitarra de la Suite Francesa No. 4
 de J. S. Bach.
 
-![img](../../../../assets/image/20250203/suiteFrancesaIV.png)
+![img](../../../../assets/image/20250203/suiteFrancesaIV-1.png)
+
+![img](../../../../assets/image/20250203/suiteFrancesaIV-2.png)
 
