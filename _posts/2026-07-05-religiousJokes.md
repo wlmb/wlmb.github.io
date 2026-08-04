@@ -4,8 +4,9 @@ title: ChatGPT and jokes related to religion
 comments: true
 excerpt: A simple experiment about ChatGPT and jokes related to religion.
 tags:
-       - perl
-       - email
+       - AI
+       - GPT
+       - Censorship
 
 ---
 
